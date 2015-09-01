@@ -3,31 +3,31 @@
 ## Basic Types:
 There are four basic types of primative of values in JavaScript- null, Boolean, Numbers and Strings. A primative is data that is not an object and has no methods.
 
-- null: An intentionally empty value.
-    - Syntax: null
+- `null`: An intentionally empty value.
+    - Syntax: `null`
 ```
 Ex: null
   >>null
 ```
 
-- Boolean: Represents 2 values- true and false.
+- `Boolean`: Represents 2 values- true and false.
    - The value of 0 is always represented as "false".
     - All other numbers are "true". Infinity is "true".
     - null is "false".
     - An empty String ("") is false.
-    - Syntax: Boolean ([value])
+    - Syntax: `Boolean` ([value])
 ```
 Ex: Boolean (1)
     true
 ```
-- Numbers: Numeric data (integers= 45 & decimals= 3.14)
-    - Syntax: Number ()
+- `Numbers`: Numeric data (integers= 45 & decimals= 3.14)
+    - Syntax: `Number` ()
 ```
 Ex: Number (3.14)
     3.14
 ```
-- Strings: A sequence of characters used to represent text (aka words).
-   - Syntax: String ("word")
+- `Strings`: A sequence of characters used to represent text (aka words).
+   - Syntax: `String` ("word")
    - Words should always be wrapped in quotes but numbers do not need to be.
     - You can use either double quotes "" or single quotes '' as long as the opening and closing quotes match.
     - Use a backslash to escape special characters ("This is Lacy\'s story")
@@ -68,20 +68,20 @@ Ex: String ("This is a string")
 
 
 ## Built-in Constants:
-- undefined: a variable that has not yet been assigned a value.
+- `undefined`: a variable that has not yet been assigned a value.
 ```
-Ex: Number (x)
+Ex: `Number` (x)
 ```
 
-- NaN: Not a Number; an undefined value or value that can't be represented.
+- `NaN`: Not a Number; an undefined value or value that can't be represented.
 ```
 Ex. (0/0)
-    NaN
+    `NaN`
 ```
 
-- Infinity: The value Infinity (positive infinity) is greater than any other number. Any positive number multiplied by Infinity is Infinity, and anything divided by Infinity is 0.
-    - Syntax- Infinity
+- `Infinity`: The value `Infinity` (positive infinity) is greater than any other number. Any positive number multiplied by `Infinity` is `Infinity`, and anything divided by `Infinity` is 0.
+    - Syntax- `Infinity`
     ```
-    Ex. Infinity * 70
-        Infinity
+    Ex. `Infinity` * 70
+        `Infinity`
     ```
