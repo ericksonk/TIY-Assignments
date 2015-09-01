@@ -70,18 +70,18 @@ Ex: String ("This is a string")
 ## Built-in Constants:
 - `undefined`: a variable that has not yet been assigned a value.
 ```
-Ex: `Number` (x)
+Ex: Number (x)
 ```
 
 - `NaN`: Not a Number; an undefined value or value that can't be represented.
 ```
 Ex. (0/0)
-    `NaN`
+    NaN
 ```
 
 - `Infinity`: The value `Infinity` (positive infinity) is greater than any other number. Any positive number multiplied by `Infinity` is `Infinity`, and anything divided by `Infinity` is 0.
     - Syntax- `Infinity`
     ```
-    Ex. `Infinity` * 70
-        `Infinity`
+    Ex. Infinity * 70
+        Infinity
     ```
