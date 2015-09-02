@@ -1,0 +1,19 @@
+{
+  "name": "package.json",
+  "version": "0.0.0",
+  "description": "",
+  "main": "StringCalculator.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericksonk/TIY-Assignments.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericksonk/TIY-Assignments/issues"
+  },
+  "homepage": "https://github.com/ericksonk/TIY-Assignments#readme"
+}
