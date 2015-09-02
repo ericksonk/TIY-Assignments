@@ -65,7 +65,12 @@ Ex: String ("This is a string")
     x -= y;
     x = x-y
     ```
-
+- `typeof` operator returns a string indicating the type of the unevaluated operand and is followed by its operand.
+```
+ex: typeof 45
+    "number"
+```
+- `,` The comma operator allows multiple expressions to be evaluated in a single statement and returns the result of the last expression.
 
 ## Built-in Constants:
 - `undefined`: a variable that has not yet been assigned a value.
@@ -85,3 +90,28 @@ Ex. (0/0)
     Ex. Infinity * 70
         Infinity
     ```
+## Functions
+
+Functions are a form of [control flow](http://en.wikipedia.org/wiki/Control_flow) used in computer programs... 
+
+### `function` keyword
+
+The `function` keyword is used to _define_ a function with parentheses and curly braces:
+
+    // This is a Function Definition for `whatever`...
+    function whatever ( /* arguments go here */ ) {
+      // body of function goes here
+    }
+
+Once a function has been defined, it can be _invoked_ by a function name.
+
+When a function is called, _arguments_ are passed to the function as input, and the function can optionally return an output. A function in JavaScript is also an object.
+
+* An anonymous function is a function without a function name:
+```
+function () {}
+```
+* A named function is a function with a function name:
+```
+function foo() {}
+```
