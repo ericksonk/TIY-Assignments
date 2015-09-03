@@ -115,3 +115,21 @@ function () {}
 ```
 function foo() {}
 ```
+**Function Definition** has _parameters_
+```
+function identifier (){
+
+}
+```
+
+**Function Invocation** a function within a function; has _arguments_
+```
+Number (Boolean(null))
+```
+
+* Parameters- what is inside parenthesis; identifiers
+
+* 3 Parts to a Function:
+1. Inputs via parameters/arguments
+2. Outputs via return (undfined if no return)
+3. Side Effects via Body Statement
