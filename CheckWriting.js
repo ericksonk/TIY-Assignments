@@ -7,23 +7,58 @@ test('toEnglish: `0` to `9`', function(){
   assert.equal(toEnglish(0), "zero");
   assert.equal(toEnglish(1), "one");
   assert.equal(toEnglish(2), "two");
-  // et cetera, et cetera, et cetera...
+  assert.equal(toEnglish(3), "three");
+  assert.equal(toEnglish(4), "four");
+  assert.equal(toEnglish(5), "five");
+  assert.equal(toEnglish(6), "six");
+  assert.equal(toEnglish(7), "seven");
+  assert.equal(toEnglish(8), "eight");
+  assert.equal(toEnglish(9), "nine");
 }); // END test(toEnglish)
 
 test('toEnglish: `10` to `20`', function(){
-  // use `assert` again...
+
 }); // END test(toEnglish)
 
 test('toEnglish: `21` to `30`', function(){
   // this is where `toEnglish` starts to get interesting...
 }); // END test(toEnglish)
- 
+
 /**
  * @param {Number} value to convert to English number word
  * @return {String} representing `value` in English
  */
-function toEnglish(value){
-  // start simply and refactor...
+function toEnglish(x){
+  if (x == 0){
+    return "zero";
+  }
+  if (x == 1){
+    return "one";
+  }
+  if (x == 2){
+    return "two";
+  }
+  if (x == 3){
+    return "three";
+  }
+  if (x == 4){
+    return "four";
+  }
+  if (x == 5){
+    return "five";
+  }
+  if (x == 6){
+    return "six";
+  }
+  if (x == 7){
+    return "seven";
+  }
+  if (x == 8){
+    return "eight";
+  }
+  if (x == 9){
+    return "nine";
+  }
 } // END toEnglish
 
 test('BEAST MODE: toCheck', function(){
