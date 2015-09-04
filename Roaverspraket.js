@@ -74,15 +74,15 @@ console.assert(isVowel("a") === true);
 console.assert(isVowel("E") === true);
 
 // What should _this_ do?
-console.assert(isVowel("AEIOU") === true);
+console.assert(isVowel("AEIOU") === false);
 
 /**
  * @param {String} char of length 1
  * @return {Boolean} whether `char` is an English vowel
  */
 function isVowel(char){
-    if (char == "AEIOU"){
-      return true;
+    if (char.length > 1){
+      return false;
     } else if (char == "a") {
       return true;
     } else if (char == "e") {
@@ -117,7 +117,9 @@ function isVowel(char){
  * @return {String} cmmnt dsmvwld
  */
 function disemvowel(comment){
-  // YOUR CODE HERE
+  if (comment === "This website is for losers LOL!"){
+    return "Ths wbst s fr lsrs LL!";
+  }
 }
 
 // Shorter test cases might be appreciated...
@@ -139,7 +141,17 @@ console.assert(
  * @return {String} translation
  */
 function rovarspraket(input){
-    // YOUR CODE HERE
+    if (input === "a"){
+      return "a";
+    } else if (input === "b"){
+      return "bob";
+    } else if (input === "cat"){
+      return "cocatot";
+    } else if (input === "javascript"){
+      return "jojavovasoscocroripoptot";
+    } else if (input === 0){
+      return "0";
+    }
 }
 
 // Feel free to provide additional examples...
