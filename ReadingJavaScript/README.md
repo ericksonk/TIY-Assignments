@@ -133,3 +133,116 @@ Number (Boolean(null))
 1. Inputs via parameters/arguments
 2. Outputs via return (undfined if no return)
 3. Side Effects via Body Statement
+
+## Control Flow Constructs
+* `{}` as Block Operator
+    * Block Statement: most basic statement used to group statements.
+```
+Ex. while (x = 2) {
+    x++;
+    }
+```   
+* Conditional Statements: a set of statements that executes if a specific condition is true.
+    * **if...else**
+    Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to       execute a statement if the condition is false. condition can be any expression that evaluates to true or         false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1     and statement_2 can be any statement, including further nested if statements.
+    ```
+    if (condtion){
+        statement 1;
+    } else {
+        staatement 2;
+    }
+    ```
+    * Compound statements using **else if** (use when you have multiple conditions to test).
+    ```
+    if (condition_1) {
+  statement_1;
+} else if (condition_2) {
+  statement_2;
+} else if (condition_n) {
+  statement_n;
+} else {
+  statement_last;
+} 
+```
+* Falsy Values: (all other values evaluate to `true`)
+    * `false`
+    * `undefined`
+    * `null`
+    * 0
+    * `NaN`
+    * the empty string ("")
+  
+    * **`switch` Statements** : A switch statement allows a program to evaluate an expression and attempt to match     the expression's value to a case label. If a match is found, the program executes the associated statement.
+    * 
+    ```
+    switch (expression) {
+  case label_1:
+    statements_1
+    [break;]
+  case label_2:
+    statements_2
+    [break;]
+    ...
+  default:
+    statements_def
+    [break;]
+}
+```
+Ex. In the following example, if fruittype evaluates to "Bananas", the program matches the value with case "Bananas" and executes the associated statement. When break is encountered, the program terminates switch and executes the statement following switch. If break were omitted, the statement for case "Cherries" would also be executed.
+```
+switch (fruittype) {
+  case "Oranges":
+    console.log("Oranges are $0.59 a pound.");
+    break;
+  case "Apples":
+    console.log("Apples are $0.32 a pound.");
+    break;
+  case "Bananas":
+    console.log("Bananas are $0.48 a pound.");
+    break;
+  case "Cherries":
+    console.log("Cherries are $3.00 a pound.");
+    break;
+  case "Mangoes":
+    console.log("Mangoes are $0.56 a pound.");
+    break;
+  case "Papayas":
+    console.log("Mangoes and papayas are $2.79 a pound.");
+    break;
+  default:
+   console.log("Sorry, we are out of " + fruittype + ".");
+}
+console.log("Is there anything else you'd like?");
+```
+
+## Loops
+Offer quick easy way to do something repeatedly
+* ** `do...while` ** :
+    * repeats until a specified condition evaluates to false.
+    ```
+    do
+        statement
+    while (condition);
+    ```
+    * statement executes once before the condition is checked.
+    * To execute multiple statements, use a block statement ({ ... }) to group those statements.
+    * If condition is true, the statement executes again. At the end of every execution, the condition is checked.
+    * When the condition is false, execution stops and control passes to the statement following `do...while`.
+    Ex. In the following example, the do loop iterates at least once and reiterates until i is no longer less than     5.
+    ```
+    do {
+        i += 1;
+        console.log(i);
+    } while (i < 5);
+    ```
+* ** `while` ** : executes statements as long as a specified evaluates to `true`.
+    ```
+    while (condition)
+        statement
+  ```
+  * _If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop._
+  * The condition test occurs before statement in the loop are executed.
+  * If the condition returns true, statement is executed and the condition is tested again.
+  * If the condition returns false, execution stops and control is passed to the statement following while
+  * To execute multiple statements, use a block statement `({ ... })` to group those statements.
+    
