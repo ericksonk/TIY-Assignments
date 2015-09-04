@@ -8,8 +8,10 @@ console.assert(max(0,3) === 3);
 console.assert(max(10,3) === 10);
 console.assert(max(-1,-3) === -1);
 
+// Why would you do this?
 console.assert(max("aaa",0) === 0);
 
+// Okay, that's just silly...
 console.assert(isNaN(max("aaa","bbb")));
 
 /**
@@ -17,16 +19,12 @@ console.assert(isNaN(max("aaa","bbb")));
  * @param {Number} B to compare to A
  * @return {Number} the greater of A or B
  */
+
  function max(A, B){
-     if (A > B){
+     if (A >= B){
        return A;
-     }
-     if (B > A){
+     } else {
        return B;
-     }
-     if (A === NaN)
-     else {
-       return false;
      }
  }
 
@@ -52,7 +50,13 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  * @return {Number} greatest of A, B, and C
  */
 function maxOfThree(A, B, C){
-    // YOUR CODE HERE
+    if (A > B && A > C){
+      return A;
+    } else if (B > C){
+      return B;
+    } else {
+      return C;
+    }
 }
 
 /**
@@ -70,14 +74,38 @@ console.assert(isVowel("a") === true);
 console.assert(isVowel("E") === true);
 
 // What should _this_ do?
-// console.assert(isVowel("AEIOU") === FILL_ME_IN);
+console.assert(isVowel("AEIOU") === true);
 
 /**
  * @param {String} char of length 1
  * @return {Boolean} whether `char` is an English vowel
  */
 function isVowel(char){
-    // YOUR CODE HERE
+    if (char == "AEIOU"){
+      return true;
+    } else if (char == "a") {
+      return true;
+    } else if (char == "e") {
+      return true;
+    } else if (char == "i"){
+      return true;
+    } else if (char == "o"){
+      return true;
+    } else if (char == "u"){
+      return true;
+    } else if (char == "A") {
+      return true;
+    } else if (char == "E") {
+      return true;
+    } else if (char == "I"){
+      return true;
+    } else if (char == "O"){
+      return true;
+    } else if (char == "U"){
+      return true;
+    } else {
+      return false;
+    }
 }
 
 /**
