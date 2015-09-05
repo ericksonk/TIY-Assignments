@@ -6,7 +6,7 @@
  * @return {String}
  */
 function reverse(S){
-    // YOUR CODE HERE: NO INTERNET COPY-PASTA!
+    return S.split("").reverse().join("");
 }
 
 console.assert(reverse("") === ""); // Really?
