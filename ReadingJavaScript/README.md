@@ -246,3 +246,57 @@ Offer quick easy way to do something repeatedly
   * If the condition returns false, execution stops and control is passed to the statement following while
   * To execute multiple statements, use a block statement `({ ... })` to group those statements.
     
+## `Array`
+Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of the JS array or the types of its elements are fixed. Since an array's size length grow or shring at any time, JS arrays are not guaranteed to be dense.
+* **Syntax**
+```
+[element0, element1, ..., elementN]
+new Array(element0, element1[, ...[, elementN]])
+new Array(arrayLength)
+```
+* Arrays are zero-indexed (the 1st element of an array is at index 0 and the last element is at the index equal to the value of the array's length property minus 1.
+```
+var arr = ['this is the first element', 'this is the second element'];
+console.log(arr[0]);              // logs 'this is the first element'
+console.log(arr[1]);              // logs 'this is the second element'
+console.log(arr[arr.length - 1]); // logs 'this is the second element'
+```
+* JS pproperties that begin with a digit cannoot be referenced with a dot notation and **must be accessed using bracket notation.**
+```
+var years = [1950, 1960, 1970, 1980, 1990, 2000, 2010];
+console.log(years.0);   // a syntax error
+console.log(years[0]);  // works properly
+
+renderer.3d.setTexture(model, 'character.png');     // a syntax error
+renderer['3d'].setTexture(model, 'character.png');  // works properly
+```
+* Object properties which happen to be reserved words can only be accessed as string literals in bracket notation
+```
+var promise = {
+  'var'  : 'text',
+  'array': [1, 2, 3, 4]
+};
+```
+#### `length` and numerical properties
+Several of the built-in array methods take into account the value of the array's `length` property when they're called.
+* the value of the lenth property is an integer with a positive sign and a value less than 2 to the 32nd power.
+* You can set the `length` property to truncate an array at any time. When you extend an array by changing its length property, the number of actual elements does not increase--- ex. if you set `length` to 3 when it is currently 2, the array still contains only 2 elements. Thus the `length` property does not necessarily indicate the number of defined values in the array.
+* **Syntax**
+```
+_arr_.length
+```
+
+
+console.log(promise['array']);
+
+. . .
+
+### [Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2)
+
+#### [`Array.prototype.pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+
+* _params:_ none
+* _returns:_ the last element
+* _side-effects_: removes the element returned
+
+##### Examples
