@@ -38,12 +38,20 @@ console.assert(
  * // @param {Number} N rotation to apply, default 13
  * @return {String} encoded with ROT13
  */
+ //var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" || "abcdefghijklmnopqrstuvwxyz";
+ //var abcROT13 = "NOPQRSTUVWXYZABCDEFGHIJKLM" || "nopqrstuvwxyzabcdefghijklm";
 function encode(phrase){
-    var phrase = "";
-    var i;
-    for (i = 0, i < phrase.length, i++) {
-      phrase.charCodeAt(i) + N;
+    var message = "";
+    for (var i = 0; i < phrase.length; i++){
+      var char = phrase[i].charCodeAt(0);
+      char += 13;
+        if ( char > 122){
+          message += String.fromCharCode((char - 123) + 97);
+        } else {
+          message += String.fromCharCode(char);
+        }
     }
+    return message;
 }
 
 /**
@@ -56,7 +64,8 @@ function encode(phrase){
  * @return {String} decoded by ROT-N
  */
 function decode(phrase, N){
-    // YOUR CODE HERE
+    //var message = "";
+    //for (var i=0; i < phrase.length; )
 }
 
 // Produce more examples, please...
