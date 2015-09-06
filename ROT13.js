@@ -38,8 +38,12 @@ console.assert(
  * // @param {Number} N rotation to apply, default 13
  * @return {String} encoded with ROT13
  */
-function encode(phrase/*, N */){
-    // YOUR CODE HERE... EMPHASIS ON **YOUR**
+function encode(phrase){
+    var phrase = "";
+    var i;
+    for (i = 0, i < phrase.length, i++) {
+      phrase.charCodeAt(i) + N;
+    }
 }
 
 /**
