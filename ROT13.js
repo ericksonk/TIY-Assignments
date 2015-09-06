@@ -40,18 +40,28 @@ console.assert(
  */
  //var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" || "abcdefghijklmnopqrstuvwxyz";
  //var abcROT13 = "NOPQRSTUVWXYZABCDEFGHIJKLM" || "nopqrstuvwxyzabcdefghijklm";
-function encode(phrase){
-    var message = "";
+function encode(phrase, N){
+  var message = "";
     for (var i = 0; i < phrase.length; i++){
       var char = phrase[i].charCodeAt(0);
       char += 13;
-        if ( char > 122){
+        if (char > 122){
           message += String.fromCharCode((char - 123) + 97);
-        } else {
+        } if (char < 122) {
           message += String.fromCharCode(char);
-        }
-    }
+        } else {
+          for (var i = 0; i < phrase.length; i++){
+            var char = phrase[i].charCodeAt(0);
+              char += N;
+                if (char > 122){
+                  message += String.fromCharCode((char - 123) + 97);
+                } if (char < 122) {
+                  message += String.fromCharCode(char);
+                }
+              }
+            }
     return message;
+  }
 }
 
 /**
@@ -63,14 +73,25 @@ function encode(phrase){
  * @param {Number} N rotation to apply, default 13
  * @return {String} decoded by ROT-N
  */
-function decode(phrase, N){
-    //var message = "";
-    //for (var i=0; i < phrase.length; )
-}
+ function decode(phrase, N){
+     var message = "";
+     for (var i = 0; i < phrase.length; i++){
+       var char = phrase[i].charCodeAt(0);
+       char -= N;
+         if (char < 97){
+           message += String.fromCharCode((char + 123 ) - 97);
+         } else {
+           message += String.fromCharCode(char);
+         }
+     }
+     return message;
+ }
 
 // Produce more examples, please...
 console.assert(encode("hello") === "uryyb");
 console.assert(encode("uryyb") === "hello");
 
-console.assert(encode("hello", 2) === "jgnnq")
-console.assert(decode("jgnnq", 2) === "hello")
+console.assert(encode("hello", 2) === "jgnnq");
+console.assert(decode("jgnnq", 2) === "hello");
+console.assert(decode("khoor", 3) === "hello");
+console.assert(decode("ovmwxmri", 4) === "kristine");
