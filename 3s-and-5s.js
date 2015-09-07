@@ -5,18 +5,19 @@ var test = require('mocha').it,
 // want to return the sum of all the multiples of 3 and 5 below n (1000).
 
 test('getting a list of multiples of 3', function(){
-  //expect(multiples).to.equal(`sum of multiples of 3`);
-  //expect(multiples).to.equal(`sum of multiples of 5`);
-  //expect(multiples).to.equal(`sum of multiples of 15`);
+  //expect(multiples).to.equal(233168);
+  //couldn't get working test w/ chai- tested with console.log
+
 }); // END test 3s
 
-var three = [];//multiples of 3
-var five = [];//multiples of 5
-var both = [];//multiples of both 3 and 5
-var join = three.concat(five, both); // .concat() adds five & both to three
+
+
 
 function multiples () {
-  for (var i = 3; i < 1000; i ++){
+  var three = [];//multiples of 3
+  var five = [];//multiples of 5
+  var both = [];//multiples of both 3 and 5
+  for (var i = 1; i < 1000; i++){
     if (i % 3 === 0 && i % 5 === 0){ //i divides by 3 & 5 w/ no remainder
       both.push(i); // pushes all true to the `both` array
     } else if (i % 3 === 0) { // i divides by 3 w/ no remainder
@@ -25,5 +26,9 @@ function multiples () {
         five.push(i); // pushes all true to the `five`
     }
   }
-  for (i = 0, sum = 0; i < join.length; sum += join[i++]);
+  var join = three.concat(five, both); // .concat() adds five & both to three
+  for (x = 0, sum = 0; x < join.length; sum += join[x++]);
+  //starts counting @ index value 0, sum starts @ 0; will run lenth of array join;
+  //+= adds each item in array `join` to sum
 }
+//multiples(); //calls function
