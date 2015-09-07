@@ -2,22 +2,33 @@ var test = require('mocha').it,
   expect = require('chai').expect;
 
 test('generating the Fibonacci sequence', function(){
-  //expect(fibonacci).to.exist;
-  expect(fibonacci([])).to.deep.equal([ 0 ]);
-  expect(fibonacci(1)).to.deep.equal([ 1 ]);
+  expect(fibonacci([0])).to.deep.equal([ ]);
+  expect(fibonacci([1])).to.deep.equal([ 1 ]);
   expect(fibonacci([2])).to.deep.equal([1, 2]);
-  expect(fibonacci([5])).to.deep.equal([1, 2, 3, 4, 5]);
+  expect(fibonacci([5])).to.deep.equal([1, 2, 3, 5]);
   // ...ad nauseum.
 }); // END test(fibonacci)
 
-function fibonacci (x){
-  if (x = undefined){
-    return [ 0 ];
-  }if (x = 1){
+function fibonacci(x){
+//for (var i = 0; i < 10; i++){
+  if (x == 0){
+    return [];
+  } if (x == 1){
     return [ 1 ];
-  }if (x = 2){
-    return [1, 2];
+  } if (x > 1){
+    return
   }
+}
+  // if (x == 0){
+  //     return [ ];
+  // } else if (x == 1){
+  //     return [ 1 ];
+  // }
+  // } if (x == 2){
+  //   return [1, 2];
+  // } if (x == 5){
+  //     return [1, 2, 3, 5];
+  // }
 }
 
 test('just even numbers?', function(){
