@@ -6,7 +6,7 @@ var test = require('mocha').it,
 
 test('getting a list of multiples of 3', function(){
   //expect(multiples).to.equal(233168);
-  //couldn't get working test w/ chai- tested with console.log
+  //couldn't get working test w/ chai- passed tested with console.log
 
 }); // END test 3s
 
