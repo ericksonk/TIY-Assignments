@@ -5,14 +5,15 @@ var test = require('mocha').it,
 // want to return the sum of all the multiples of 3 and 5 below n (1000).
 
 test('getting a list of multiples of 3', function(){
-  //expect(sumOfThree).to.equal(`sum of multiples of 3`);
-  //expect(sumOfFive).to.equal(`sum of multiples of 5`);
-  //expect(sumOfFifteen).to.equal(`sum of multiples of 15`);
+  //expect(multiples).to.equal(`sum of multiples of 3`);
+  //expect(multiples).to.equal(`sum of multiples of 5`);
+  //expect(multiples).to.equal(`sum of multiples of 15`);
 }); // END test 3s
 
 var three = [];//multiples of 3
 var five = [];//multiples of 5
 var both = [];//multiples of both 3 and 5
+var join = three.concat(five, both); // .concat() adds five & both to three
 
 function multiples () {
   for (var i = 3; i < 1000; i ++){
@@ -21,7 +22,8 @@ function multiples () {
     } else if (i % 3 === 0) { // i divides by 3 w/ no remainder
         three.push(i); // pushes all true to the `three` array
     } else if (i % 5 === 0) { // i divides by 5 w/ no remainder
-        five.push(i); // pushes all true to the `five` 
+        five.push(i); // pushes all true to the `five`
     }
   }
+  for (i = 0, sum = 0; i < join.length; sum += join[i++]);
 }
