@@ -90,6 +90,10 @@ Ex. (0/0)
     Ex. Infinity * 70
         Infinity
     ```
+    
+* `i++` & `i--`
+    * increments up (++) or down (--) by 1
+
 ## Functions
 
 Functions are a form of [control flow](http://en.wikipedia.org/wiki/Control_flow) used in computer programs... 
@@ -245,14 +249,32 @@ Offer quick easy way to do something repeatedly
   * If the condition returns true, statement is executed and the condition is tested again.
   * If the condition returns false, execution stops and control is passed to the statement following while
   * To execute multiple statements, use a block statement `({ ... })` to group those statements.
+
+* ** for loops **
+    * systematically access every element in an array.
+* Actual expample:
+```
+var cities = ["Melbourne", "Amman", "Helsinki", "NYC"];
+for (i = 0; i < cities.length; i++);{
+    console.log("I would like to visit " + cities[i]);
+}
+```
+i starts off at value 0. The for loop runs until i < 4 bc cities.length equals 4- the array `cities` has 4 elements in it. We will increment i by 1 each time we loop over (i++).
     
 ## `Array`
 Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of the JS array or the types of its elements are fixed. Since an array's size length grow or shring at any time, JS arrays are not guaranteed to be dense.
+    * store lists of data
+    * can store different data types at the same times
+    * are ordered so the position of each piece of data is fixed
+ 
 * **Syntax**
 ```
 [element0, element1, ..., elementN]
 new Array(element0, element1[, ...[, elementN]])
 new Array(arrayLength)
+```
+```
+var arrayName = [ data, data, data];
 ```
 * Arrays are zero-indexed (the 1st element of an array is at index 0 and the last element is at the index equal to the value of the array's length property minus 1.
 ```
@@ -277,6 +299,7 @@ var promise = {
   'array': [1, 2, 3, 4]
 };
 ```
+
 #### `length` and numerical properties
 Several of the built-in array methods take into account the value of the array's `length` property when they're called.
 * the value of the lenth property is an integer with a positive sign and a value less than 2 to the 32nd power.
@@ -286,17 +309,36 @@ Several of the built-in array methods take into account the value of the array's
 _arr_.length
 ```
 
+#### `Array.proptype.__`
+* `array.pop()`
+    * removes the last element from an array and returns that element
+* `array.join()`
+    * joins all elements of an array into a string
+    * Syntax: str = arr.join([separator = ','])
+    * `separator` -Optional. Specifies a string to separate each element of the array. The separator is converted         to a string if necessary. If omitted, the array elements are separated with a comma. If separator is an           empty string, all elements are joined without any characters in between them.
+* `array.concat()`
+    * returns a new array comprised of the array on which it is called joined with the array(s) and/or value(s)         provided as arguments.
+    * Syntax: var new_array = old_array.concat(value1[, value2[, ...[, valueN]]])
+* `array.push`
+    * adds one or more elements to the end of an array and returns the new length of the array.
+    * Syntax: arr.push(element1, ..., elementN)
+* `array.slice()`
+    * returns a shallow copy of a portion of an array into a new array object.
+    * Syntax: arr.slice([begin[, end]])
 
-console.log(promise['array']);
+#### String.prototype.___
+* `charCodeAt()` returns numeric unicode value of a character at the given index
+    * Syntax: str.charCodeAt(index)
+* `fromCharCode()`returns unicode values to string
+    * Syntax: str.charCode(unicode value)
+    * Ex. var res = String.fromCharCode(65); returns "A"
 
-. . .
+<!--### [Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2)-->
 
-### [Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2)
+<!--#### [`Array.prototype.pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)-->
 
-#### [`Array.prototype.pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+<!--* _params:_ none-->
+<!--* _returns:_ the last element-->
+<!--* _side-effects_: removes the element returned-->
 
-* _params:_ none
-* _returns:_ the last element
-* _side-effects_: removes the element returned
-
-##### Examples
+<!--##### Examples-->
