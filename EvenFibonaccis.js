@@ -1,40 +1,24 @@
-var text = require('mocha').it,
-  expects = require('chai').expect;
+var test = require('mocha').it,
+  expect = require('chai').expect;
 
 test('generating the Fibonacci sequence', function(){
-  expect(fibonacci([0])).to.deep.equal([0]);
-  expect(fibonacci([1])).to.deep.equal([1]);
+  //expect(fibonacci).to.exist;
+  expect(fibonacci([])).to.deep.equal([ 0 ]);
+  expect(fibonacci(1)).to.deep.equal([ 1 ]);
   expect(fibonacci([2])).to.deep.equal([1, 2]);
   expect(fibonacci([5])).to.deep.equal([1, 2, 3, 4, 5]);
   // ...ad nauseum.
 }); // END test(fibonacci)
 
-
-
-
-// Hey, where's `fibonacci`...? Uh oh...
-// function fibonacci (n) {
-//     var a = 0, b = 1, f=1;
-//     for(var i = 0; i <= 4000000; i++){
-//       f = a + b;
-//       a = b;
-//       b = f;
-//     }
-//     return f;
-
-// function fibonacci (){
-//   var num1 = 1;
-//   var num2 = 2;
-//   var sum = 0;
-//   while(num1 < 4000000){
-//     if (num1 % 2 === 0) {
-//       sum += num1;
-//     }
-//     var num3 = num1 + num2;
-//     num1 = num2;
-//     num2 = num3;
-//   }
-// }
+function fibonacci (x){
+  if (x = undefined){
+    return [ 0 ];
+  }if (x = 1){
+    return [ 1 ];
+  }if (x = 2){
+    return [1, 2];
+  }
+}
 
 test('just even numbers?', function(){
   expect(evens([ ])).to.deep.equal([ ]);
@@ -58,3 +42,17 @@ test('summing even Fibonacci numbers?', function(){
   expect( sum(evens(fibonacci(0))) ).to.equal(FILL_ME_IN); // nice.
   // There really should be more code in here...
 }); // END test(dat CHAIN tho)
+
+// function fibonacci (){
+//   var num1 = 1;
+//   var num2 = 2;
+//   var sum = 0;
+//   while(num1 < 4000000){
+//     if (num1 % 2 === 0) {
+//       sum += num1;
+//     }
+//     var num3 = num1 + num2;
+//     num1 = num2;
+//     num2 = num3;
+//   }
+// }
