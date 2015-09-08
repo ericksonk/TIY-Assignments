@@ -333,12 +333,32 @@ _arr_.length
     * Syntax: str.charCode(unicode value)
     * Ex. var res = String.fromCharCode(65); returns "A"
 
-<!--### [Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2)-->
+## Document Object Model (DOM)
+Programming interface for HTML, XML and SVG documents. It provides a structured representation of the document (a tree) and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content. Provides a representation of the document as a structured group of nodes and objects that have properties and methods. ** Connects web pages to scripts or programming languages. **
 
-<!--#### [`Array.prototype.pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)-->
-
-<!--* _params:_ none-->
-<!--* _returns:_ the last element-->
-<!--* _side-effects_: removes the element returned-->
-
-<!--##### Examples-->
+#### The `window` object
+Represents a window containing a DOM document; the document property points to the DOM document loaded in that window. A window for a given document can be obtained using the document.defaultView property.
+* properties
+    * `window.document` : Each web page loaded in the browser has its own document object; serves as an entry point into the web page's content and provides fuctionality which is clobal to the document(such as obtaining the page's URL and creating new elements in the document).
+        * Returns a reference to the document that the window contains.
+    * `window.location` : Gets/sets the location, or current URL, of the window object (returns a Location object with information about the current location of the document).
+    * `window.history` : Returns a reference to the history object which provides an interface for manipulating the prowser _session history_ (pages visited in the tab or frame that the current page is loaded in).
+        * Syntax: `var historyObj = window.history;`
+* Methods:
+    * `window.alert()` method displays an alert dialog with the optional specifed content and an OK button.
+        * Syntax: `window.alert(message);
+    * `window.confirm()` method displays a modal dialog with an optional message and two buttons, OK and Cancel.
+        * Syntax: result + window.comfirm(message);
+    * `window.reload()`
+    * `window.open()` Loads a resource into either a new browsing context (such as a window) or one that already exists, depending on the specified parameters.
+    * `window.close` Closes the current window, or the window on which it was called.
+#### `location` object
+#### `document` object
+Each web page loaded in the browser has its own document object. The Document interface serves as an entry point into the web page's content (the DOM tree, including elements such as <body> and <table>) and provides functionality which is global to the document (such as obtaining the page's URL and creating new elements in the document).
+* properties
+    * `head`
+    * `body`
+* Methods 
+#### `HTMLElement` type
+#### `HTMLCollection type 
+#### `NodeList` type
