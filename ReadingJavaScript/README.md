@@ -352,13 +352,18 @@ Represents a window containing a DOM document; the document property points to t
     * `window.reload()`
     * `window.open()` Loads a resource into either a new browsing context (such as a window) or one that already exists, depending on the specified parameters.
     * `window.close` Closes the current window, or the window on which it was called.
+
 #### `location` object
+
 #### `document` object
 Each web page loaded in the browser has its own document object. The Document interface serves as an entry point into the web page's content (the DOM tree, including elements such as <body> and <table>) and provides functionality which is global to the document (such as obtaining the page's URL and creating new elements in the document).
 * properties
     * `head`
     * `body`
 * Methods 
+* 
 #### `HTMLElement` type
+
 #### `HTMLCollection type 
+
 #### `NodeList` type
