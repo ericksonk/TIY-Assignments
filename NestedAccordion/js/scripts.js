@@ -26,6 +26,10 @@ The div element has a class set to "cbp-ntcontent"
 Also inside of the div element is another unordered list with the class of "cbp-ntsubaccordion"
 Each item in the sub-list has a header with the class "cbp-nttrigger" and div element with the class "cbp-ntcontent"
 
+In order to use JavaScript with our HTML file, link to our .js file within a `<script>` tag on the .html page with the source set to the file path
+
+
+
 
 The list with in the header tag
 
