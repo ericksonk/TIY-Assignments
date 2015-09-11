@@ -21,6 +21,7 @@ Need to write a `toggleItem()` onclick function that is assigned to the <h3> ele
 Need to call the id "cpb-ntaccordion" using the `Document` prototype document.getElementById()
 **/
 
+/*
 //OPENING & CLOSING ACCORDION
 var heading = document.querySelector('.cbp-nttrigger'); //d
   heading.addEventListener('click', function(){ // the `addEventListener` listens to the Event type `click`
@@ -34,9 +35,33 @@ var heading = document.querySelector('.cbp-nttrigger'); //d
     return true;
   }
 });
+**/
+
+//OPENING ALL HEADINGS
+var heading = document.querySelectorAll("li.cbp-ntopen"); //Store nodelist in array
+if (heading.length > 0) { // if it contains items then..
+  for (var i = 0; i < heading.length; i++){ //will loop through each heading
+    heading[i].className = "cbp-ntopen"; //putting in to array. Change value of the class attribute
+                  //^^^^is changing all class attributes to "cbp-open" for all of the elements in the nodelist
+  }
+}
+
+// }
+
+  heading.addEventListener('click', function(){
+  if (document.querySelector('li').className !== "cbp-ntopen"){
+    document.querySelector('li').className = "cbp-ntopen";
+    return true;
+  }
+  if (document.querySelector('li').className === "cbp-ntopen"){
+    document.querySelector('li').className = null;
+    return true;
+  }
+});
 
 /*
 var collapse = document.querySelector("li").className = "cbp-ntopen" ;// `.` = class
   collapse.addEventListener('click', function(){ //trying to remove class of "cbp-ntopen"
     document.querySelector('li').removeClass("cbp-ntopen");
   }
+**/
