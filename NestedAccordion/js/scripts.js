@@ -38,26 +38,60 @@ var heading = document.querySelector('.cbp-nttrigger'); //d
 **/
 
 //OPENING ALL HEADINGS
-var heading = document.querySelectorAll("li.cbp-ntopen"); //Store nodelist in array
-if (heading.length > 0) { // if it contains items then..
-  for (var i = 0; i < heading.length; i++){ //will loop through each heading
-    heading[i].className = "cbp-ntopen"; //putting in to array. Change value of the class attribute
-                  //^^^^is changing all class attributes to "cbp-open" for all of the elements in the nodelist
-  }
+
+//my code
+var openAll = document.querySelectorAll('li.cbp-ntopen'); //creates array of open accordion
+//var closeAll = document.querySelectorAll(//'li.null'); //?????creates array of closed accordion
+    openAll.addEventListener("click", function(){
+    for (var i = 0; i < openAll.length; i++) { //will loop through each item
+      openAll[i].className = "cbp-ntopen";
+      //if (document.querySelectorAll('li').className !== "cbp-ntopen")
+
 }
-
-// }
-
-  heading.addEventListener('click', function(){
-  if (document.querySelector('li').className !== "cbp-ntopen"){
-    document.querySelector('li').className = "cbp-ntopen";
-    return true;
-  }
-  if (document.querySelector('li').className === "cbp-ntopen"){
-    document.querySelector('li').className = null;
-    return true;
-  }
 });
+
+
+// if (heading.length > 0) { //aka if it contains items..
+
+//ORIG FUNC 4 REF
+/*
+heading.addEventListener('click', function(){
+if (document.querySelector('li').className !== "cbp-ntopen"){
+  document.querySelector('li').className = "cbp-ntopen";
+  return true;
+}
+if (document.querySelector('li').className === "cbp-ntopen"){
+  document.querySelector('li').className = null;
+  return true;
+}
+});
+**/
+
+
+//group code- wtf idk what is happening
+// var heading = document.querySelectorAll("h3.cbp-nttrigger"); //Store nodelist in array / `h3.cbp-nttrigger` bc I want to target all h3 tags
+// heading.addEventListener('click', function(){
+// if (heading.length > 0) { // if it contains items then..
+//   for (var i = 0; i < heading.length; i++){ //will loop through nodelist for class cbp-nttrigger
+//     heading[i].addEventListener("click", function(){ //putting in to array. Change value of the class attribute
+// //
+//       var openAcc = document.querySelectorAll("li.cbp-ntopen");
+//       if (openAcc.length > 0){
+//         for (var i = 0; i < openAcc.length; i++){
+//           openAcc[i].className = "";
+//         };
+//
+//       } else {
+//           document.querySelectorAll("li").className = "cbp-ntopen";
+//         }
+//       }
+//   }
+//   }
+// }
+// }
+// } ^^^???????
+
+
 
 /*
 var collapse = document.querySelector("li").className = "cbp-ntopen" ;// `.` = class
