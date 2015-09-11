@@ -1,3 +1,4 @@
+/*
 file w/o js:
 * can not choose between grid or list view
 * bulleted list
@@ -21,5 +22,21 @@ switch (expression) { //whoa Atom spit this out when i typed `switch`... might b
 
     break;
   default:
-
 }
+**/
+// previous pseudo is wrong bc didnt have image and font files linked
+
+
+//NEW PSEUDO CODE
+/*
+//capture href, add an event listener, and add a class - for grid
+//capture href, add an event listener, and add a class - for list
+//figure out how to get the class unadded when the other is selected
+// for the div.. we need to do some if else's
+
+* div > toggle button between viewgrid & viewlist classes
+  * if grid is selected then view grid calss added to div
+  * if list is selected then view-list class added to div
+  * when grid is added list is removed
+  * when list is added grid is removed
+**/
