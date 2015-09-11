@@ -21,15 +21,16 @@ Need to write a `toggleItem()` onclick function that is assigned to the <h3> ele
 Need to call the id "cpb-ntaccordion" using the `Document` prototype document.getElementById()
 **/
 
-
-var heading = document.querySelector('.cbp-nttrigger');
-  heading.addEventListener('click', function(){ //function to expand header
-  if (document.querySelector('li').className !== "cbp-ntopen"){
-    document.querySelector('li').className = "cbp-ntopen";
+//OPENING & CLOSING ACCORDION
+var heading = document.querySelector('.cbp-nttrigger'); //d
+  heading.addEventListener('click', function(){ // the `addEventListener` listens to the Event type `click`
+  if (document.querySelector('li').className !== "cbp-ntopen"){ // method `querySelector` selects the element <li>
+                                                                // if the class attribute is not equal to "cbp-ntopen" then..
+    document.querySelector('li').className = "cbp-ntopen"; //..the event type `click` changes the class attribute to "cbp-ntopen"
     return true;
   }
-  if (document.querySelector('li').className === "cbp-ntopen"){
-    document.querySelector('li').className = "";
+  if (document.querySelector('li').className === "cbp-ntopen"){ // if the class attribute is strictly equal to "cbp-ntopen"..
+    document.querySelector('li').className = null; //..the event type `click` changes the class attribute to null
     return true;
   }
 });
@@ -39,7 +40,3 @@ var collapse = document.querySelector("li").className = "cbp-ntopen" ;// `.` = c
   collapse.addEventListener('click', function(){ //trying to remove class of "cbp-ntopen"
     document.querySelector('li').removeClass("cbp-ntopen");
   }
-**/
-// heading.addEventListener('click', function(){ //function to collapse header
-//   document.querySelector('li').className = "cbp-ntclose"; // lol this didnt work
-// });
