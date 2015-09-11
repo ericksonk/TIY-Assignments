@@ -40,3 +40,15 @@ switch (expression) { //whoa Atom spit this out when i typed `switch`... might b
   * when grid is added list is removed
   * when list is added grid is removed
 **/
+
+document.getElementsByClassName("cbp-vm-grid"); //captured element
+var grid = document.getElementByClassName("cbp-vm-grid"); //
+grid.addEventListener("click", function() {
+  grid.className = "cbp-vm-selected";
+});
+
+document.getElementsByClassName("cbp-vm-list"); //captured element
+var list = document.getElementByClassName("cbp-vm-list"); //
+list.addEventListener("click", function() {
+  list.className = "cbp-vm-selected";
+});
