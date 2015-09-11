@@ -21,11 +21,25 @@ Need to write a `toggleItem()` onclick function that is assigned to the <h3> ele
 Need to call the id "cpb-ntaccordion" using the `Document` prototype document.getElementById()
 **/
 
+
 var heading = document.querySelector('.cbp-nttrigger');
-heading.addEventListener('click', function(){ //function to expand header
-  document.querySelector('li').className = "cbp-ntopen";
+  heading.addEventListener('click', function(){ //function to expand header
+  if (document.querySelector('li').className !== "cbp-ntopen"){
+    document.querySelector('li').className = "cbp-ntopen";
+    return true;
+  }
+  if (document.querySelector('li').className === "cbp-ntopen"){
+    document.querySelector('li').className = "";
+    return true;
+  }
 });
 
+/*
+var collapse = document.querySelector("li").className = "cbp-ntopen" ;// `.` = class
+  collapse.addEventListener('click', function(){ //trying to remove class of "cbp-ntopen"
+    document.querySelector('li').removeClass("cbp-ntopen");
+  }
+**/
 // heading.addEventListener('click', function(){ //function to collapse header
-//   document.querySelector('li').className = "cbp-ntopen";
+//   document.querySelector('li').className = "cbp-ntclose"; // lol this didnt work
 // });
