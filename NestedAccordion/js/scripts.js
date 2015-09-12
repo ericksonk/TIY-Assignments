@@ -22,7 +22,7 @@ Need to call the id "cpb-ntaccordion" using the `Document` prototype document.ge
 **/
 
 /*
-//OPENING & CLOSING ACCORDION
+//OPENING & CLOSING 1st ACCORDION
 var heading = document.querySelector('.cbp-nttrigger'); //d
   heading.addEventListener('click', function(){ // the `addEventListener` listens to the Event type `click`
   if (document.querySelector('li').className !== "cbp-ntopen"){ // method `querySelector` selects the element <li>
