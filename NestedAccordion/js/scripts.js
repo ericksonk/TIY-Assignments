@@ -48,13 +48,13 @@ for (var i = 0; i < openAll.length; i++) { //will loop through each item in arra
     for (var i = 0; i < openAll.length; i++){ // once clicked, goes through each item in array and...
       var parent = openAll[i].parentElement; //`...returns parent element (<li>) for each
       if (parent.className !== "cbp-ntopen"){
-        parent.className = "cbp-ntopen";
-        return true;
+        parent.className = "cbp-ntopen"; // just opens all 
+        //return true;
       }
-      if (parent.className === "cbp-ntopen"){
-        parent.className = "";
-        return true;
-      }
+      // if (parent.className === "cbp-ntopen"){
+      //   parent.className = "";
+      //   return true;
+      // }
     }
   });
 }
