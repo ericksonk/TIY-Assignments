@@ -38,23 +38,32 @@ var heading = document.querySelector('.cbp-nttrigger'); //d
 **/
 
 
-
-//OPENING ALL HEADINGS
-
-//my code
+/*
+//OPENING & CLOSE ALL HEADINGS @ SAME TIME
 var openAll = document.querySelectorAll('h3.cbp-nttrigger'); //Stores node list in array
 for (var i = 0; i < openAll.length; i++) { //will loop through each item in array and adds event listener of `click`
   openAll[i].addEventListener('click', function(){
     for (var i = 0; i < openAll.length; i++){ // once clicked, goes through each item in array and...
       var parent = openAll[i].parentElement; //`...returns parent element (<li>) for each
-      if (parent.className !== "cbp-ntopen"){
-        parent.className = "cbp-ntopen"; // just opens all 
-        //return true;
+      if (parent.className !== "cbp-ntopen"){ // if parent className does not equal "cpb-ntopen"...
+        parent.className = "cbp-ntopen"; // ... assign it "cbp-ntopen"
+      } else {
+        parent.className = ""; // if else, return empty string
       }
-      // if (parent.className === "cbp-ntopen"){
-      //   parent.className = "";
-      //   return true;
-      // }
+    }
+  });
+}
+**/
+
+// OPEN & CLOSE ALL HEADINGS INDIVIDUALLY
+var openAll = document.querySelectorAll('h3.cbp-nttrigger'); //Stores node list in array
+for (var i = 0; i < openAll.length; i++) { //will loop through each item in array and adds event listener of `click`
+  openAll[i].addEventListener('click', function(){
+    var parent = this.parentElement; //`...returns parent element for `this` aka what is being clicked on
+    if (parent.className !== "cbp-ntopen"){ // if parent className does not equal "cpb-ntopen"...
+      parent.className = "cbp-ntopen"; // ... assign it "cbp-ntopen"
+    } else {
+      parent.className = ""; // if else, return empty string
     }
   });
 }
