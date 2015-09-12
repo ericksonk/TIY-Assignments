@@ -31,24 +31,33 @@ var heading = document.querySelector('.cbp-nttrigger'); //d
     return true;
   }
   if (document.querySelector('li').className === "cbp-ntopen"){ // if the class attribute is strictly equal to "cbp-ntopen"..
-    document.querySelector('li').className = null; //..the event type `click` changes the class attribute to null
+    document.querySelector('li').className = ""; //..the event type `click` changes the class attribute to empty string
     return true;
   }
 });
 **/
 
+
+
 //OPENING ALL HEADINGS
 
 //my code
-var openAll = document.querySelectorAll('li.cbp-ntopen'); //creates array of open accordion
-//var closeAll = document.querySelectorAll(//'li.null'); //?????creates array of closed accordion
-    openAll.addEventListener("click", function(){
-    for (var i = 0; i < openAll.length; i++) { //will loop through each item
-      openAll[i].className = "cbp-ntopen";
-      //if (document.querySelectorAll('li').className !== "cbp-ntopen")
-
+var openAll = document.querySelectorAll('h3.cbp-nttrigger'); //Stores node list in array
+for (var i = 0; i < openAll.length; i++) { //will loop through each item in array and adds event listener of `click`
+  openAll[i].addEventListener('click', function(){
+    for (var i = 0; i < openAll.length; i++){ // once clicked, goes through each item in array and...
+      var parent = openAll[i].parentElement; //`...returns parent element (<li>) for each
+      if (parent.className !== "cbp-ntopen"){
+        parent.className = "cbp-ntopen";
+        return true;
+      }
+      if (parent.className === "cbp-ntopen"){
+        parent.className = "";
+        return true;
+      }
+    }
+  });
 }
-});
 
 
 // if (heading.length > 0) { //aka if it contains items..
@@ -68,7 +77,7 @@ if (document.querySelector('li').className === "cbp-ntopen"){
 **/
 
 
-//group code- wtf idk what is happening
+//group code- idk what is happening
 // var heading = document.querySelectorAll("h3.cbp-nttrigger"); //Store nodelist in array / `h3.cbp-nttrigger` bc I want to target all h3 tags
 // heading.addEventListener('click', function(){
 // if (heading.length > 0) { // if it contains items then..
