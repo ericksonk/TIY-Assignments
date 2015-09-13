@@ -29,14 +29,14 @@
 // console.log(list);
 
 
-var gridButton = document.querySelector('a.cbp.vm.icon ');
-var selectedButton = document.activeElement;
-  gridButton.addEventListener('click', function(){
+var buttonDefault = document.querySelector('div.cbp-vm-options');
+//   buttonDefault.addEventListener('click', function(){
+//     document.querySelector('a').className = 'cbp-vm-icon cbp-vm-grid cbp-vm-selected';
+//     }
+// });
+console.log(buttonDefault);
 
-    console.log(gridButton[2]);
-//   document.querySelector('a').className = 'cbp.vm-icon c'
-});
-
+//var selectedButton = document.activeElement; ???? maybe use activeElement at some point?
 
 // list.addEventListener("click", function() {
 //   list.className += "cbp-vm-selected";
