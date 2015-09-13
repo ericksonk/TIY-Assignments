@@ -6,21 +6,9 @@
  **/
 
 // var form = document.getElementsByClassName('.cbp-mc-form');
-var fName = document.getElementById('first_name');
-// var lName =
-// var email =
-// var country =
-// var bio =
-// var phone =
-// var affiliate =
-// var job =
-// var cat =
-// var gadget =
-// var talent =
-// var drink =
-// var superPower =
-// var weapon =
-// var comment =
+// console.log(form);
+var inputIds = document.querySelectorAll('input'); // create array of all id's in input tag
+console.log(inputIds);
 
 function firstName (){
   console.log(fName.value);
