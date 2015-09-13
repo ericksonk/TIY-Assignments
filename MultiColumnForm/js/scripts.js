@@ -9,26 +9,40 @@
 // console.log(form);
 
 var inputIds = document.querySelectorAll('input'); // create array of all id's in input tag
-console.log(inputIds);
 var sendData = document.querySelector(".cbp-mc-submit"); // targets `send your data button`
-
-for (var i = 0; i < inputIds.length; i++){
-  inputsId[i].addEventListener('input', function(){
-    for (i > 0; inputIds.length; i++){
-      output = inputsId[i].element.value;
+sendData.addEventListener('click', function(){
+  inputIds.addEventListener('input', function(){
+    for (var i = 0; i < inputIds.length; i++){
+      output = inputIds[i].value;
       console.log(output);
     }
   });
-}
+});
+
+
+
+// for (var i = 0; i < inputIds.length; i++){
+//   inputsId[i].addEventListener('input', function(){
+//     for (i > 0; inputIds.length; i++){
+//       output = inputsId[i].element.value;
+//       console.log(output);
+//     }
+//   });
+// }
+
 
 //
 // function data (){
 //   for (var i = 0; i < inputIds.length; i++){
-//     inputIds[i].addEventListener('input', data);
-//     output = inputIds[i].value;
-//     console.log(output);
+//     inputIds[i].addEventListener('input', function(){
+//       sendData.addEventListener('click', data);
+//       console.log(inputIds[i].value);
+//     });
 //   }
 // }
+
+
+// output = inputIds[i].value;
 
 
 
