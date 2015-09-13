@@ -20,10 +20,17 @@
 //   grid.className += "cbp-vm-selected";
 // });
 
+
 //capture href, add an event listener, and add a class - for list
-var divTarget = document.getElementById('.cbp-vm'); //
-var classTarget = document.querySelectorAll('div.cbp-vm-options, divTarget.cbp-vm-switcher');
-console.log(classTarget);
+var divTarget = document.getElementById('.cbp-vm'); //targeting parent of the divs
+var classTarget = document.querySelectorAll('div.cbp-vm-options, divTarget.cbp-vm-switcher');//creates node list
+var grid = document.querySelectorAll('a.cbp-vm-grid');
+var list = document.querySelectorAll('a.cbp-vm-list'); //array of 
+console.log(list);
+
+//COME BACK LATER
+//var gridButton =
+
 // list.addEventListener("click", function() {
 //   list.className += "cbp-vm-selected";
 // });

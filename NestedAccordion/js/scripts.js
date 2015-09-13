@@ -35,7 +35,7 @@ var heading = document.querySelector('.cbp-nttrigger'); //d
     return true;
   }
 });
-**/
+
 
 
 /*
