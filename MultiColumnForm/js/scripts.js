@@ -5,15 +5,12 @@
  * add event listener?
  **/
 
-// var form = document.getElementsByClassName('.cbp-mc-form');
-// console.log(form);
-
 var inputIds = document.querySelectorAll('input, select, textarea'); // creates array of all id's in input, select & textarea tags
 var sendData = document.querySelector(".cbp-mc-submit"); // targets `send your data` button
 
-sendData.addEventListener('click', function(event){ // adds event listener of `click` to button
-    for (var i = 0; i < inputIds.length; i++){ // loops through ID array
-      output = inputIds[i].value; //return output of each ID | `.value` returns text input
+sendData.addEventListener('click', function(event){ // adds event listener of `click` to submit button
+    for (var i = 0; i < inputIds.length; i++){ // loops through ID array/nodelist
+      output = inputIds[i].value; //return output of each item in nodelist ... `.value` returns text input
       console.log(output);
     }
     event.preventDefault(); // prevents page from refressing after clicking submit button
@@ -63,3 +60,7 @@ sendData.addEventListener('click', function(event){ // adds event listener of `c
 // function data (){ //fuction to loop through array `inputIds` and return output
 //
 // }
+
+
+// var form = document.getElementsByClassName('.cbp-mc-form');
+// console.log(form);
