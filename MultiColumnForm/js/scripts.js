@@ -8,17 +8,15 @@
 // var form = document.getElementsByClassName('.cbp-mc-form');
 // console.log(form);
 
-var inputIds = document.querySelectorAll('input'); // create array of all id's in input tag
-var sendData = document.querySelector(".cbp-mc-submit"); // targets `send your data button`
-sendData.addEventListener('click', function(){
-  inputIds.addEventListener('input', function(){
-    for (var i = 0; i < inputIds.length; i++){
-      output = inputIds[i].value;
+var inputIds = document.querySelectorAll('input'); // creates array of all id's in input tag
+var sendData = document.querySelector(".cbp-mc-submit"); // targets `send your data` button
+sendData.addEventListener('click', function(event){ // adds event listener of `click` to button
+    for (var i = 0; i < inputIds.length; i++){ // loops through ID array
+      output = inputIds[i].value; //return output of each ID
       console.log(output);
     }
-  });
+    event.preventDefault();
 });
-
 
 
 // for (var i = 0; i < inputIds.length; i++){
