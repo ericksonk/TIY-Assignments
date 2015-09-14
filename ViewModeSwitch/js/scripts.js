@@ -21,6 +21,25 @@
 // });
 
 
+var div = document.querySelector('#cbp-vm'); //selects ID cbp-vm (entire view mode)
+    list = document.querySelector('.cbp-vm-icon.cbp-vm-list');//selects <a> element for list view
+    grid = document.querySelector('.cbp-vm-icon.cbp-vm-grid');//selects the <a> element for grid view
+
+function viewList (){ //assigns elements which classes they need to display list mode
+  div.className = "cbp-vm-switch cbp-vm-view-list";
+  list.className = "cbp-vm-icon cbp-vm-list cbp-vm-selected";
+  grid.className = "cbp-vm=icon cbp-vm-grid";
+}
+list.addEventListener('click', viewList); //assigns event listener `click` to list icon
+
+function viewGrid (){ //assigns elements which classes they need to display grid mode
+  div.className = "cbp-vm-switch cbp-vm-view-grid";
+  grid.className = "cbp-vm-icon cbp-vm-grid cbp-vm-selected";
+  list.className = "cbp-vm-icon cbp-vm-list";
+}
+grid.addEventListener('click', viewGrid); //assigns event listener 'click' to grid icon
+
+
 // WUT? COME BACK LATER
 // var divTarget = document.getElementById('.cbp-vm'); //targeting parent of the divs
 // var classTarget = document.querySelectorAll('div.cbp-vm-options, divTarget.cbp-vm-switcher');//creates node list
@@ -29,44 +48,15 @@
 // console.log(list);
 
 
-var buttonDefault = document.querySelector('div.cbp-vm-options');
+// var buttonDefault = document.querySelector('div.cbp-vm-options');
 //   buttonDefault.addEventListener('click', function(){
 //     document.querySelector('a').className = 'cbp-vm-icon cbp-vm-grid cbp-vm-selected';
 //     }
 // });
-console.log(buttonDefault);
+// console.log(buttonDefault);
 
 //var selectedButton = document.activeElement; ???? maybe use activeElement at some point?
 
 // list.addEventListener("click", function() {
 //   list.className += "cbp-vm-selected";
 // });
-
-
-// previous pseudo is wrong bc didnt have image and font files linked
-/*
-file w/o js:
-* can not choose between grid or list view
-* bulleted list
-* no item images
-* no add to cart button
-
-
-file w/ js:
-* content is interactive and you can toggle over gird or list buttons to change the view
-* add-to-cart buttons for each item
-* images for each item
-
-
-How to fix:
-* write function that lets you `switch` view modes from grid to list
-* create `for` loops for gird and list
-* target class `cbp-vm-switcher` with getElementByClassName
-
-switch (expression) { //whoa Atom spit this out when i typed `switch`... might be helpful????
-  case expression:
-
-    break;
-  default:
-}
-**/
