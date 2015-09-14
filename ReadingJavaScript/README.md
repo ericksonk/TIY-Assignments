@@ -367,3 +367,51 @@ Each web page loaded in the browser has its own document object. The Document in
 #### `HTMLCollection type 
 
 #### `NodeList` type
+
+## `Event` Interface
+* DOM Events are sent to notify code of interesting things that have taken place.
+* Each Event is represented by an object which is based on the event interface & may have additional custom fields and/or functions used to get additional information about what happend.
+* Events can represent everything from basic user interactions to automaged notifications of things happening in the rendering model.
+* The `Event` interface represents any event of the DOM. It contains common properties and methods to any event. 
+* `Event()` creates an Event object.
+    * Common Event types
+        * `MouseEvent()` mousedown, mouseup, click, dblclick, mousemove, mouseover, mousewheel, mouseout,                     contextmenu
+        * `TouchEvent()` touchstart, touchmove, touchend, touchcancel
+        * `KeyboardEvent()` keydown, keypress, keyup
+        * form events- foucus, blur, change, submit
+        * window events- scroll, resize, hashchange, load, unload
+#### `event.bubbles`
+** How does an Event bubble? Can I make it stop? **
+`event.bubbles` indicates whether the given event bubbles up through the DOM or not.
+* Returns a `Boolean` value, which is true if the event bubbles up through the DOM.
+* Syntax `event.bubbles`
+    * ** Example ** var bool = event.bubbles;
+        * `bool` contain true or false, deprending on whether the event can bubble or not.
+* Only certain events can bubble.
+    * Events that do bubble have this property set to `true`. You can use this property to check if an event is allowed to bubble or not.
+* (event propagation = the order elements recieve envents)
+* ** With bubbling the event is first capture dand handled byt the innermose element and then propagated to outer elements **
+* ** With capturing, the event is first captured by the outermost element and then propagated to the inner elements **
+    * capturing is also called trickling
+*   Remember ** bubble up, trickle down **
+*  We can use the `addEventListener(type, listener, useCapture)` to register event handlers for either bubbling (default) or capturing mode.
+    * To use the capturing mode pass the thrid argument as `true`
+    * ** Only the bubbling model is supported by all major browsers **
+* `event.stopPropagation()` stops the bubbling of an event to parent elements, preventing any parent handlers from being notified of the event
+* `event.preventDefault()` prevents the browser from executing the default action.
+
+#### `event.target` a reference to the target to which the event was originally dispatched AKA The deepest element which triggered the event is called the target or, the originating element.
+The `event.target` property can be used in order to implement event delegation.
+
+#### `MouseEvent` interface represents events that occur due to the user interacting with a pointing device (such as a mouse) Common events using this interface include `click` `dblclick` `mouseup` `mousedown`
+* Constructor: `MouseEvent()` creates a MouseEvent object
+* fired when the mouse is moved and also when the buttons are clicked
+
+#### `<form>` element represents a docuent section that contains interactive controls to submit info to a web server.
+
+#### event `click`fired when mouse button is pressed and released on a single element 
+#### event `scroll` fired when the document view or an element has been scrolled (global)
+#### event `change` fired for <input>, <select>, and <textarea> elements when a change to the element's value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element's value.
+#### event `submit` fired when a form is submitted.
+#### event `load` fired when a resource and its dependent resources have finished loading.
+#### event `unload` fired when the document or a child resource is being unloaded.
