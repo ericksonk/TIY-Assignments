@@ -1,20 +1,4 @@
 /*
-What does it do?
-  What interactive elements exist?
-    * headings- when you click on the headings they open accordion style and then
-      there are accordions with in accordions
-    * navagation buttons- `::before` & `::after` js???
-  How do you interact with them?
-  What visual effects are produced by interacting?
-
-How does it do it?
- What existing HTML elements are changed?
- What new HTML elements are created?
- What CSS styles are used to produce the effect?
-  * `cursor: pointer` controls animated arrow?
-  *
-  **/
-
 The HTML language is assigned to english and the class should be assigned to Javascript.
 The bulk of the document is an unordered list with `<h3>` tags for each heading.
 The unordered list has an id of "cpb-ntaccordion" and a class of "cbp-ntaccordion"
@@ -35,11 +19,51 @@ Need to write a `toggleItem()` onclick function that is assigned to the <h3> ele
   // toggleItem() hides or shows all the items in the list when it is clicked on (onclick)
     // aka will expand and collapse accordion
 Need to call the id "cpb-ntaccordion" using the `Document` prototype document.getElementById()
+**/
+
+/*
+//OPENING & CLOSING 1st ACCORDION
+var heading = document.querySelector('.cbp-nttrigger'); //d
+  heading.addEventListener('click', function(){ // the `addEventListener` listens to the Event type `click`
+  if (document.querySelector('li').className !== "cbp-ntopen"){ // method `querySelector` selects the element <li>
+                                                                // if the class attribute is not equal to "cbp-ntopen" then..
+    document.querySelector('li').className = "cbp-ntopen"; //..the event type `click` changes the class attribute to "cbp-ntopen"
+    return true;
+  }
+  if (document.querySelector('li').className === "cbp-ntopen"){ // if the class attribute is strictly equal to "cbp-ntopen"..
+    document.querySelector('li').className = ""; //..the event type `click` changes the class attribute to empty string
+    return true;
+  }
+});
 
 
 
-The list with in the header tag
+/*
+//OPENING & CLOSE ALL HEADINGS @ SAME TIME
+var openAll = document.querySelectorAll('h3.cbp-nttrigger'); //Stores node list in array
+for (var i = 0; i < openAll.length; i++) { //will loop through each item in array and adds event listener of `click`
+  openAll[i].addEventListener('click', function(){
+    for (var i = 0; i < openAll.length; i++){ // once clicked, goes through each item in array and...
+      var parent = openAll[i].parentElement; //`...returns parent element (<li>) for each
+      if (parent.className !== "cbp-ntopen"){ // if parent className does not equal "cpb-ntopen"...
+        parent.className = "cbp-ntopen"; // ... assign it "cbp-ntopen"
+      } else {
+        parent.className = ""; // if else, return empty string
+      }
+    }
+  });
+}
+**/
 
-
-// elements and assigning elements- look at DOM terms
-// onclickeventhandler - changes color of font when you hover
+// OPEN & CLOSE ALL HEADINGS INDIVIDUALLY
+var openAll = document.querySelectorAll('h3.cbp-nttrigger'); //Stores node list in array
+for (var i = 0; i < openAll.length; i++) { //will loop through each item in array and adds event listener of `click`
+  openAll[i].addEventListener('click', function(){
+    var parent = this.parentElement; //`...returns parent element for `this` aka what is being clicked on
+    if (parent.className !== "cbp-ntopen"){ // if parent className does not equal "cpb-ntopen"...
+      parent.className = "cbp-ntopen"; // ... assign it "cbp-ntopen"
+    } else {
+      parent.className = ""; // if else, return empty string
+    }
+  });
+}
