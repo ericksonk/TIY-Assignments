@@ -25,19 +25,19 @@ var div = document.querySelector('#cbp-vm'); //selects ID cbp-vm (entire view mo
     list = document.querySelector('.cbp-vm-icon.cbp-vm-list');//selects <a> element for list view
     grid = document.querySelector('.cbp-vm-icon.cbp-vm-grid');//selects the <a> element for grid view
 
-list.addEventListener('click', viewList); //assigns event listener `click` to list icon
 function viewList (){ //assigns elements which classes they need to display list mode
   div.className = "cbp-vm-switch cbp-vm-view-list";
   list.className = "cbp-vm-icon cbp-vm-list cbp-vm-selected";
   grid.className = "cbp-vm=icon cbp-vm-grid";
 }
+list.addEventListener('click', viewList); //assigns event listener `click` to list icon
 
-grid.addEventListener('click', viewGrid); //assigns event listener 'click' to grid icon
 function viewGrid (){ //assigns elements which classes they need to display grid mode
   div.className = "cbp-vm-switch cbp-vm-view-grid";
   grid.className = "cbp-vm-icon cbp-vm-grid cbp-vm-selected";
   list.className = "cbp-vm-icon cbp-vm-list";
 }
+grid.addEventListener('click', viewGrid); //assigns event listener 'click' to grid icon
 
 
 // WUT? COME BACK LATER
