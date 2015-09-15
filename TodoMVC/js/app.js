@@ -6,8 +6,12 @@
 })(window);
 
 // User Stories
-// I can add a task to my todo list so that I can remember to do it later.
-		// need create function that returns input
+/**
+ * I can add a task to my todo list so that I can remember to do it later.
+ *
+ * What do I need to do as the user to add a task?
+ * - Click on text box for a new task (<input id="newtask">)
+ * need create function that returns input
 		// create variable to hold nodelist of input data- use querySelector to target <ul> element with class "todo-list"
 		//create variable for submitting data & assign event listner to it (no click, have to press `enter` on the keyboard)
 		//use .value to return input
