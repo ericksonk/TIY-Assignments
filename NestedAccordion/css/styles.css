@@ -1,11 +1,11 @@
 h1 {
-  color: #720E99;
+  color: cornflowerblue;
   font-family: helvetica;
   font-size: 24 px;
 }
 
 h3 {
-  color: #720E99;
+  color: cornflowerblue;
   font-family: helvetica;
   font-size: 30 pt;
 }
@@ -19,13 +19,13 @@ h3:hover:before {
 }
 
 h4 {
-  color: #8B4C8F;
+  color: cornflowerblue;
   font-family: helvetica;
   font-size: 14 pt;
 }
 
 h5 {
-  color: #977099;
+  color: cornflowerblue;
   font-family: helvetica;
   font-size: 12 pt;
 }
