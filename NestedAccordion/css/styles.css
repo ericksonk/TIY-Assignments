@@ -1,0 +1,28 @@
+h1 {
+  color: #720E99;
+  font-family: helvetica;
+  font-size: 24 px;
+}
+
+h3 {
+  color: #720E99;
+  font-family: helvetica;
+  font-size: 16 px;
+}
+
+h4 {
+  color: #8B4C8F;
+  font-family: helvetica;
+  font-size: 14 px;
+}
+
+h5 {
+  color: #977099;
+  font-family: helvetica;
+  font-size: 12 px;
+}
+
+p {
+  font-family: helvetica;
+  font-size: 11 px;
+}

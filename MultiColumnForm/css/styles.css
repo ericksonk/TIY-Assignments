@@ -1,0 +1,35 @@
+body {
+  background-color: #B2FA5A;}
+
+/*form {
+  font-family: Arial;
+  font-size: 20px;
+  color: #ffffff;*/
+
+label {
+  font-family: Arial;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-family: Arial;
+  font-size: 20 px;
+  color: #FFFFFF;}
+
+div {
+  display: block;}
+
+.cbp-mc-column {
+  width: 155px;
+  float: left;
+  margin: 10px;}
+
+.cbp-mc-submit {
+  display: inline-block;
+  width: auto;
+}
+
+input, textarea {
+  border-style: solid;
+}
