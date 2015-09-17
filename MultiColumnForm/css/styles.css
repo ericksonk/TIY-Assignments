@@ -1,35 +1,68 @@
 body {
-  background-color: #B2FA5A;}
-
-/*form {
-  font-family: Arial;
-  font-size: 20px;
-  color: #ffffff;*/
+  background-color: #47A3DA;}
 
 label {
-  font-family: Arial;
-  font-size: 16px;
+  font-family: Arial, sans-serif;;
+  font-size: 16pt;
   color: #FFFFFF;
+  width: 100%;
 }
+
+.cbp-mc-form input, .cbp-mc-form textarea, .cbp-mc-form select,{
+  width: 100%;
+  float: left;
+  margin: 10px;
+  text-align: left;
+  padding:
+  margin:
+}
+
 
 h1 {
   font-family: Arial;
-  font-size: 20 px;
+  font-size: 20pt;
   color: #FFFFFF;}
 
 div {
   display: block;}
 
-.cbp-mc-column {
-  width: 155px;
+div.cbp-mc-column {
+  width: 345px;
   float: left;
-  margin: 10px;}
+  margin: 10px;
+}
 
 .cbp-mc-submit {
   display: inline-block;
   width: auto;
 }
 
-input, textarea {
+input {
+  width: 300px;
+  height: 25px;
+  border-width: 3px;
   border-style: solid;
+  border-color: #fff;
+  background-color: #47A3DA;
+  padding: 10px;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #fff;
+  background-color: #47A3DA;
+  padding: 10px;
+}
+
+select {
+  width: 300px;
+  height: 25px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fff;
+  background-color: #47A3DA;
+  padding: 10px;
 }
