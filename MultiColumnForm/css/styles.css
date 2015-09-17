@@ -26,11 +26,11 @@ h1 {
 div {
   display: block;}
 
-div.cbp-mc-column {
+/*div.cbp-mc-column {
   width: 345px;
   float: left;
   margin: 10px;
-}
+}*/
 
 .cbp-mc-submit {
   display: inline-block;
