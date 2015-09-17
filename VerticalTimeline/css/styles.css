@@ -15,13 +15,28 @@ header {
 }
 div.cbp_tmlabel {
   color: #fff;
-  background-color: #AFDCF8;
-  /*width: 200px;
-  height: 250px;
+  background-color: #6CBFEE;
   padding:
-  border:
-  margin:
-}*/
+}
+
+.cbp_tmlabel {
+	position: relative;
+	background: #6CBFEE;
+}
+.cbp_tmlabel:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(108, 191, 238, 0);
+	border-right-color: #6CBFEE;
+	border-width: 10px;
+	margin-top: -10px;
+}
 /*
 <time> date & time on lefthand side of boxes
 <header class="clearfix"> header elements
@@ -33,7 +48,7 @@ p - paragraphs within h2
 */
 
 /*
-color: #AFDCF8; (light blue)
+color: #6CBFEE; (light blue)
         #3594CB; (dark blue)
 font: Arial; ???
       20pt. ???
