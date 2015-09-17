@@ -1,6 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  display: block;
+}
+header {
+  width: auto;
+  margin: 10px 200px 10px 200px;
+  padding: 50px 100px 50px 100px;
+  text-align: center;
+}
+.main {
+  width: auto;
+  margin: 0 45px 0 45px;
+  padding: 0 30px 50px 30px;
+}
+
 /*
 <time> date & time on lefthand side of boxes
-
 <header class="clearfix"> header elements
 ul.cbp_tmtimeline entire timeline element
 div.cbp_tmicon - icons next to time
@@ -12,3 +27,6 @@ p - paragraphs within h2
 /*
 color: #AFDCF8; (light blue)
         #3594CB; (dark blue)
+font: Arial; ???
+      20pt. ???
+*/
