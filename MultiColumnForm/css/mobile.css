@@ -1,0 +1,10 @@
+input, select, textarea {
+  display: block;
+  -webkit-column-count: 1 400px;
+     -moz-column-count: 1 400px;
+          column-count: 1 400px;
+}
+
+.cbp-mc-form {
+  align: center;
+}

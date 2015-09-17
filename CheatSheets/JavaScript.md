@@ -50,7 +50,7 @@ Ex: String ("This is a string")
     - `>` greater than (4 > 2); true
 
 - Assignment: Assigns value to it's left operand based on the value of it's right operand.
-    - `=` assignment operator 
+    - `=` assignment operator
     ```
     (var x = 1);
     x = 1
@@ -90,13 +90,13 @@ Ex. (0/0)
     Ex. Infinity * 70
         Infinity
     ```
-    
+
 * `i++` & `i--`
     * increments up (++) or down (--) by 1
 
 ## Functions
 
-Functions are a form of [control flow](http://en.wikipedia.org/wiki/Control_flow) used in computer programs... 
+Functions are a form of [control flow](http://en.wikipedia.org/wiki/Control_flow) used in computer programs...
 
 ### `function` keyword
 
@@ -166,7 +166,7 @@ Ex. while (x = 2) {
   statement_n;
 } else {
   statement_last;
-} 
+}
 ```
 * Falsy Values: (all other values evaluate to `true`)
     * `false`
@@ -175,9 +175,9 @@ Ex. while (x = 2) {
     * 0
     * `NaN`
     * the empty string ("")
-  
+
     * **`switch` Statements** : A switch statement allows a program to evaluate an expression and attempt to match     the expression's value to a case label. If a match is found, the program executes the associated statement.
-    * 
+    *
     ```
     switch (expression) {
   case label_1:
@@ -260,13 +260,13 @@ for (i = 0; i < cities.length; i++);{
 }
 ```
 i starts off at value 0. The for loop runs until i < 4 bc cities.length equals 4- the array `cities` has 4 elements in it. We will increment i by 1 each time we loop over (i++).
-    
+
 ## `Array`
 Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of the JS array or the types of its elements are fixed. Since an array's size length grow or shring at any time, JS arrays are not guaranteed to be dense.
     * store lists of data
     * can store different data types at the same times
     * are ordered so the position of each piece of data is fixed
- 
+
 * **Syntax**
 ```
 [element0, element1, ..., elementN]
@@ -360,11 +360,11 @@ Each web page loaded in the browser has its own document object. The Document in
 * properties
     * `head`
     * `body`
-* Methods 
-* 
+* Methods
+*
 #### `HTMLElement` type
 
-#### `HTMLCollection type 
+#### `HTMLCollection type
 
 #### `NodeList` type
 
@@ -373,7 +373,7 @@ Each web page loaded in the browser has its own document object. The Document in
 * DOM Events are sent to notify code of interesting things that have taken place.
 * Each Event is represented by an object which is based on the event interface & may have additional custom fields and/or functions used to get additional information about what happend.
 * Events can represent everything from basic user interactions to automaged notifications of things happening in the rendering model.
-* The `Event` interface represents any event of the DOM. It contains common properties and methods to any event. 
+* The `Event` interface represents any event of the DOM. It contains common properties and methods to any event.
 * `Event()` creates an Event object.
     * Common Event types
         * `MouseEvent()` mousedown, mouseup, click, dblclick, mousemove, mouseover, mousewheel, mouseout,                     contextmenu
@@ -410,7 +410,7 @@ The `event.target` property can be used in order to implement event delegation.
 
 #### `<form>` element represents a docuent section that contains interactive controls to submit info to a web server.
 
-#### event `click`fired when mouse button is pressed and released on a single element 
+#### event `click`fired when mouse button is pressed and released on a single element
 #### event `scroll` fired when the document view or an element has been scrolled (global)
 #### event `change` fired for <input>, <select>, and <textarea> elements when a change to the element's value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element's value.
 #### event `submit` fired when a form is submitted.

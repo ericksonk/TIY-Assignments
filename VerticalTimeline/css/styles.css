@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  display: block;
+}
+header {
+  width: auto;
+  margin: 10px 200px 10px 200px;
+  padding: 50px 100px 50px 100px;
+  text-align: center;
+}
+.main {
+  width: 75%;
+  margin: 0 45px 0 45px;
+  padding: 0 30px 50px 30px;
+}
+div.cbp_tmlabel {
+  color: #fff;
+  background-color: #6CBFEE;
+  padding: 20px;
+  margin: 0 0 15px 100px;
+}
+
+.cbp_tmlabel {
+	position: relative;
+	background: #6CBFEE;
+}
+.cbp_tmlabel:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(108, 191, 238, 0);
+	border-right-color: #6CBFEE;
+	border-width: 10px;
+	margin-top: -10px;
+}
+/*
+<time> date & time on lefthand side of boxes
+<header class="clearfix"> header elements
+ul.cbp_tmtimeline entire timeline element
+div.cbp_tmicon - icons next to time
+div.cbp_tmlabel - content block
+h2 - heading for each section
+p - paragraphs within h2
+*/
+
+/*
+color: #6CBFEE; (light blue)
+        #3594CB; (dark blue)
+font: Arial; ???
+      20pt. ???
+*/
