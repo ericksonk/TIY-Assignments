@@ -8,13 +8,16 @@
       min-width: 1024px;
       content: "";
       display: table;
+      width: 50%;
       clear: both;
-    }
-    div.cbp-mc-column { /* columns */
-      width: 90%;
-      float: left;
       margin-left: auto;
       margin-right: auto;
     }
 
+    header.clearfix { /* "Responsive Multi-Column Form" */
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      text-align: center;
+    }
 }
