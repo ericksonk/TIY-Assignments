@@ -1,10 +1,6 @@
 body {
   background-color: #47A3DA;
-  /*width: auto;
-  height: auto;
-  margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;*/
+  margin-left: 90px;
 }
 
 h1 { /* "Responsive Multi-Column Form" */
@@ -22,8 +18,8 @@ label { /* field names */
   text-transform: uppercase;
 }
 
-div.cbp-mc-column {
-  width: 345px;
+div.cbp-mc-column { /* columns */
+  width: 30%;
   float: left;
   margin-left: auto;
   margin-right: auto;
@@ -63,13 +59,34 @@ select {
   margin-bottom: 10%;
 }
 
-input.cbp-mc-submit { /* submit button */
-  background-color: #1478B1;
+.cbp-mc-submit-wrap {
+ margin-left: auto;
+ margin-right: auto;
+ width: 30%;
+ height: 97px;
+ text-align: center;
+}
+
+input.cbp-mc-submit { /* SUBMIT BUTTON */
+ background-color: #10689a ;
+ font-family: 'Lato', sans-serif;
+ text-align: center;
+ border: none;
+ color: #ffffff ;
+ box-sizing: border-box;
+ font-size: 11px;
+ max-width: 30%;
+ text-transform: uppercase;
+ padding: 20px 15px;
+}
+
+/*input.cbp-mc-submit { /* submit button */*/
+  /*background-color: #1478B1;
   border: none;
   clear: both;
-  /*margin-left: auto;
-  margin-right: auto;*/
-}
+  margin-left: auto;
+  margin-right: auto;
+}*/
 
 /*.cbp-mc-form input, .cbp-mc-form textarea, .cbp-mc-form select,{
   width: auto;
