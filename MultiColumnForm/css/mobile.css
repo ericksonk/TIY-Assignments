@@ -1,4 +1,4 @@
-@media only screen and (min-device-width: 480px){
+@media only screen and (min-device-width: 320px){
 
 .cbp-mc-column {
   max-width: 480px;
@@ -6,6 +6,21 @@
   content: "";
   display: table;
   clear: both;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+header.clearfix { /* "Responsive Multi-Column Form" */
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  text-align: center;
 }
+}
+
+/*div.cbp-mc-column { /* columns */
+  /*width: 90%;
+  /*float: left;*/
+  /*margin-left: auto;
+  margin-right: auto;
+}*/
