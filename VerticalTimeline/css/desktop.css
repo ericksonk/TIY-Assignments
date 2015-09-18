@@ -1,25 +1,32 @@
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+}
+
 body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
   display: block;
 }
 span, h1 {
-  width: auto;
+  /*width: auto;
   margin: auto;
-  padding: auto;
+  padding: auto;*/
   /*margin: 10px 200px 10px 200px;
   padding: 50px 100px 50px 100px;*/
 }
 nav{
-  margin-left: 70%;
+  /*margin-left: 70%;*/
 }
 .main {
-  width: 75%;
+  /*width: 75%;
   margin: 0 45px 0 45px;
-  padding: 0 30px 50px 30px;
+  padding: 0 30px 50px 30px;*/
 }
 div.cbp_tmlabel {
-  color: #fff;
+  /*color: #fff;
   background-color: #6CBFEE;
   padding: 20px;
-  margin: 0 0 15px 100px;
+  margin: 0 0 15px 100px;*/
 }

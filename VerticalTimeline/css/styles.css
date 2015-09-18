@@ -2,29 +2,42 @@ body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
   display: block;
 }
-span, h1 {
+header { /* h3, span & nav */
   color: #47A3DA;
 }
-nav{
-  color: #6CBFEE;
-
+header > span:first-child { /* "Blueprint" */
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
-.main {
+nav{ /* nav buttons */
+  color: #6CBFEE;
+}
+.main { /* entire timeline */
   width: 75%;
   margin: 0 45px 0 45px;
   padding: 0 30px 50px 30px;
 }
-div.cbp_tmlabel {
+div.cbp_tmlabel { /* whole timeline minus margins */
   color: #fff;
   background-color: #6CBFEE;
   padding: 20px;
   margin: 0 0 15px 100px;
 }
-
-time.datetime {
+li:nth-child(even) .cbp_tmlabel { /* changes color of boxes */
+  background-color: #3594CB;
+}
+h2 {
+  border-bottom: solid 1px white;
+}
+.cbp_tmtimeline li { /* gets rid of bullet points */
+  list-style-type: none;
+}
+time > span:first-child { /* date */
+  display: block;
   color: gray;
 }
-time.cbp_tmtime {
+time > span:last-child { /* time */
+  display: block;
   color: #6CBFEE;
 }
 
