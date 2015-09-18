@@ -1,16 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
   display: block;
 }
-header {
-  width: auto;
-  margin: auto;
-  padding: auto;
-  /*margin: 10px 200px 10px 200px;
-  padding: 50px 100px 50px 100px;*/
+span, h1 {
+  color: #47A3DA;
 }
 nav{
-  
+  color: #6CBFEE;
+
 }
 .main {
   width: 75%;
@@ -22,6 +19,13 @@ div.cbp_tmlabel {
   background-color: #6CBFEE;
   padding: 20px;
   margin: 0 0 15px 100px;
+}
+
+time.datetime {
+  color: gray;
+}
+time.cbp_tmtime {
+  color: #6CBFEE;
 }
 
 /*.cbp_tmlabel {

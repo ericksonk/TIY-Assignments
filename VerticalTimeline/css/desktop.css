@@ -1,0 +1,25 @@
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  display: block;
+}
+span, h1 {
+  width: auto;
+  margin: auto;
+  padding: auto;
+  /*margin: 10px 200px 10px 200px;
+  padding: 50px 100px 50px 100px;*/
+}
+nav{
+  margin-left: 70%;
+}
+.main {
+  width: 75%;
+  margin: 0 45px 0 45px;
+  padding: 0 30px 50px 30px;
+}
+div.cbp_tmlabel {
+  color: #fff;
+  background-color: #6CBFEE;
+  padding: 20px;
+  margin: 0 0 15px 100px;
+}
