@@ -3,7 +3,18 @@
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
 
-    .cbp-mc-column {
+.cbp-mc-column {
+  float: left;
+}
+
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+}
+
+    /*.cbp-mc-column {
       max-width: 768px;
       min-width: 1024px;
       content: "";
@@ -12,7 +23,7 @@
       clear: both;
       margin-left: auto;
       margin-right: auto;
-    }
+    }*/
 
     header.clearfix { /* "Responsive Multi-Column Form" */
       margin-left: auto;
