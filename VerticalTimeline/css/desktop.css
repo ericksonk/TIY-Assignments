@@ -4,29 +4,65 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
 
-body {
-  font-family: 'Lato', Calibri, Arial, sans-serif;
+header { /* h3, span & nav */
+  color: #47A3DA;
+  margin-top: auto;
+  width: auto;
+  padding: 46px 30px 30px 30px;
+  margin: 0 140px 0 140px;
+}
+header > span:first-child { /* "Blueprint" */
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+}
+nav{ /* nav buttons */
+  color: #6CBFEE;
+  text-align: right;
+}
+.main { /* entire timeline */
+  width: 75%;
+  margin: 0 140px 0 140px;
+  padding: 0 30px 50px 30px;
+}
+div.cbp_tmlabel { /* whole timeline minus margins */
+  color: #fff;
+  background-color: #6CBFEE;
+  width: 700px;
+  height: 300px;
+  padding: 40px;
+  margin: 0 0 50px 200px;
+}
+li:nth-child(even) .cbp_tmlabel { /* changes color of boxes */
+  background-color: #3594CB;
+}
+h2 {
+  border-bottom: solid 1px white;
+}
+.cbp_tmtimeline li { /* gets rid of bullet points */
+  list-style-type: none;
+}
+time > span:first-child { /* date */
   display: block;
+  width: auto;
+  color: gray;
 }
-span, h1 {
-  /*width: auto;
-  margin: auto;
-  padding: auto;*/
-  /*margin: 10px 200px 10px 200px;
-  padding: 50px 100px 50px 100px;*/
+time > span:last-child { /* time */
+  display: block;
+  width: auto;
+  color: #6CBFEE;
+  font-size: 30pt;
 }
-nav{
-  /*margin-left: 70%;*/
-}
-.main {
-  /*width: 75%;
-  margin: 0 45px 0 45px;
-  padding: 0 30px 50px 30px;*/
 }
 div.cbp_tmlabel {
   /*color: #fff;
   background-color: #6CBFEE;
   padding: 20px;
   margin: 0 0 15px 100px;*/
-}
-}
+
+  /*span, h1 {
+    width: auto;
+    margin: auto;
+    padding: auto;
+    margin: 10px 200px 10px 200px;
+    padding: 50px 100px 50px 100px;*/

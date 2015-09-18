@@ -3,4 +3,17 @@
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
 
+body {
+      max-width: 736px;
+      min-width: 320px;
+      content: "";
+      display: table;
+      clear: both;
+      margin: 0;
+}
+div.cbp_tmlabel {
+  padding: 20px;
+  margin: 0 0 15px 100px;
+}
+
 }

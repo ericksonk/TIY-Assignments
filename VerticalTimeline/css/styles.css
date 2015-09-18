@@ -20,9 +20,9 @@ nav{ /* nav buttons */
 div.cbp_tmlabel { /* whole timeline minus margins */
   color: #fff;
   background-color: #6CBFEE;
-  padding: 20px;
+  /*padding: 20px;
   margin: 0 0 15px 100px;
-}
+}*/
 li:nth-child(even) .cbp_tmlabel { /* changes color of boxes */
   background-color: #3594CB;
 }
