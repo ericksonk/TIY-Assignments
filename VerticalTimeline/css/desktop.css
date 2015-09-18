@@ -3,7 +3,6 @@
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
-}
 
 body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -29,4 +28,5 @@ div.cbp_tmlabel {
   background-color: #6CBFEE;
   padding: 20px;
   margin: 0 0 15px 100px;*/
+}
 }
