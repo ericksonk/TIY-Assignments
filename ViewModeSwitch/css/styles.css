@@ -15,15 +15,22 @@ header > span { /* "Blueprint" */
 }
 header > h1 {
   font-size: 36px;
+  margin-top: 5px;
 }
 header > nav {
   float: right;
 }
-#cbp-vm {
+/*#cbp-vm {
   border: solid #47A3DA;
-}
+}*/
 .cbp-vm-options {
-  float: right;
+  /*float: right;*/
+  text-align: right;
+  padding-bottom: 20px;
+  border-bottom: solid #47A3DA;
+}
+#cbp-vm {
+  padding: 20px 20px 0 20px;
 }
 ul > li {
   float: left;
@@ -35,7 +42,6 @@ ul > li {
   content: "";
   display: table;
   clear: both;
-  overflow: hidden;
 }
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
@@ -45,17 +51,33 @@ ul > li {
   margin-right: auto;
 }
 li {
-  padding-right: 20px;
-}
-li:last-of-type {
-  padding-right: 0;
+  padding: 25px;
+  margin-top: 20px;
 }
 .main {
   padding: 0 30px 50px 30px;
+  border: solid #47A3DA;
 }
-/*.grid-pad > li:last-of-type {
-  padding-right: 20px;
-}*/
+.cbp-vm-grid::before {
+  content: "\f00a";
+}
+.cbp-vm-list::before {
+  content: "\f00b";
+}
+.cbp-vm-icon::before {
+  font-family: 'fontawesome';
+}
+.cbp-vm-options a {
+  display: inline-block;
+  color: gray;
+  width: 40px;
+  height: 40px;
+}
+
+
+
+
+
 
 
 
