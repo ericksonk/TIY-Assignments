@@ -11,9 +11,14 @@ body {
       clear: both;
       margin: 0;
 }
-div.cbp_tmlabel {
-  padding: 20px;
-  margin: 0 0 15px 100px;
+div {
+  display: block;
+}
+header.clearfix {
+  width: auto;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 }
