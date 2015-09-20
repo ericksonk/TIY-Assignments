@@ -1,12 +1,30 @@
-(function (window) {
-	'use strict';
 
-	// Your starting point. Enjoy the ride!
 
-})(window);
+
+// (function (window) {
+// 	'use strict';
+//
+// 	// Your starting point. Enjoy the ride!
+//
+// })(window);
+
+
+
+var todoItems = document.querySelector('.todo-list');
+var enterKey = document.querySelector('input.new-todo');
+
+enterKey.addEventListener('keypress', function (enter) {
+	var press = enter.keyCode || enter.which;
+	for (var i = 0; i < todoItems.length; i++) {
+		if (press === 13){
+			output = todoItems[i].value;
+		console.log(output);
+		}
+	}
+});
 
 // User Stories
-/**
+/*
  * I can add a task to my todo list so that I can remember to do it later.
  *
  * What do I need to do as the user to add a task?
@@ -41,3 +59,4 @@
 	// target <a> tag with className "Active" "All" and "Completed"
 	// assign event listener "click"
 	// assign className "selected" when clicked
+*/
