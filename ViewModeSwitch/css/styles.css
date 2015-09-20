@@ -28,15 +28,16 @@ header > nav {
   text-align: right;
   padding-bottom: 20px;
   border-bottom: solid #47A3DA;
+
 }
 #cbp-vm {
   padding: 20px 20px 0 20px;
 }
 ul > li {
-  float: left;
+  /*float: left;
   width: 33%;
   list-style-type: none;
-  text-align: center;
+  text-align: center;*/
 }
 .main::after {
   content: "";
@@ -50,9 +51,70 @@ ul > li {
   margin-left: auto;
   margin-right: auto;
 }
-li {
+.cbp-vm-view-grid li {
   padding: 25px;
   margin-top: 20px;
+  float: left;
+  width: 33%;
+  list-style-type: none;
+  text-align: center;
+}
+.main {
+  padding: 0 30px 50px 30px;
+  border: solid #47A3DA;
+}
+.cbp-vm-grid::before {
+  content: "\f00a";
+}
+.cbp-vm-list::before {
+  content: "\f00b";
+}
+.cbp-vm-icon::before {
+  font-family: 'fontawesome';
+}
+.cbp-vm-options a {
+  display: inline-block;
+  color: gray;
+  width: 40px;
+  height: 40px;
+}
+
+/* ! -------------------------------------- */
+
+.cbp-vm-options {
+  /*float: right;*/
+  text-align: right;
+  padding-bottom: 20px;
+  border-bottom: solid #47A3DA;
+}
+#cbp-vm {
+  padding: 20px 20px 0 20px;
+}
+ul > li {
+  /*float: left;
+  width: 33%;
+  list-style-type: none;
+  text-align: center;*/
+}
+.main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cbp-vm-view-list li {
+  padding: 25px;
+  margin-top: 20px;
+  float: left;
+  width: 99%;
+  list-style-type: none;
+  /*text-align: center;*/
 }
 .main {
   padding: 0 30px 50px 30px;
