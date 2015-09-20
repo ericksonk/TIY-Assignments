@@ -100,8 +100,7 @@ ul > li {
   margin-right: auto;
 }
 .cbp-vm-view-list li {
-  /*display: inline-block;*/
-  /*white-space: nowrap;*/
+  white-space: nowrap; /* `nowrap` prevents text from wrapping */
   /*vertical-align: middle;*/
   padding: 20px 0;
   width: 99%;
@@ -115,31 +114,42 @@ ul > li {
 }
 .cbp-vm-view-list li:last-of-type {
   padding-right: 0;
+  vertical-align: middle;
 }
-/*.cbp-vm-view-list .cbp-vm-image {
+.cbp-vm-view-list .cbp-vm-image {
   width: 10%;
+  vertical-align: middle;
   margin: 0;
+}
+.cbp-vm-image img {
+  max-width: 100%;
 }
 .cbp-vm-view-list .cbp-vm-title {
   width: 20%;
+  vertical-align: middle;
   margin: 0;
 }
 .cbp-vm-view-list .cbp-vm-price {
   width: 10%;
+  vertical-align: middle;
   margin: 0;
 }
 .cbp-vm-view-list .cbp-vm-details {
   width: 50%;
+  vertical-align: middle;
+  overflow: hidden; /* `overflow` controls what happens to content that breaks outside of its bounds | `hidden` overflowing content will be hidden */
+  white-space: normal; /* `white-space` controls how text is handled on the element it is applied to | `normal` will wrap the text */
   margin: 0;
 }
 .cbp-vm-view-list .cbp-vm-add {
   width: 10%;
+  vertical-align: middle;
   margin: 0;
-}*/
-.main {
-  padding: 0 30px 50px 30px;
-  border: solid #47A3DA;
 }
+/*.main {*/
+  /*padding: 0 30px 50px 30px;
+  border: solid #47A3DA;*/
+
 /*.cbp-vm-grid::before {
   content: "\f00a";
 }
