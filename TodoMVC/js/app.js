@@ -1,27 +1,20 @@
 
 
+var enterData = document.querySelector('input.new-todo'); // where you input the data
 
-// (function (window) {
-// 	'use strict';
-//
-// 	// Your starting point. Enjoy the ride!
-//
-// })(window);
-
-
-
-var todoItems = document.querySelector('.todo-list');
-var enterKey = document.querySelector('input.new-todo');
-
-enterKey.addEventListener('keypress', function (enter) {
-	var press = enter.keyCode || enter.which;
-	for (var i = 0; i < todoItems.length; i++) {
-		if (press === 13){
-			output = todoItems[i].value;
-		console.log(output);
-		}
-	}
+enterData.addEventListener('keypress', function () { // eventlistener `keypress` captures each key that is pressed
+	var todoInput = enterData.value; // .value returns the text input
+	console.log(todoInput); //logs task to console
+	// submit.preventDefault();
 });
+
+// var todoItems = document.querySelector('.todo-list');
+// var press = enter.keyCode || enter.which;
+// for (var i = 0; i < todoItems.length; i++) {
+// 	if (press === 13){
+// 		output = todoItems[i].value;
+// 	console.log(output);
+
 
 // User Stories
 /*
