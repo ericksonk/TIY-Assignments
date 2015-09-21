@@ -1,25 +1,35 @@
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 755px)
-  and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 320px) {
 
 body {
-      max-width: 736px;
+      max-width: 755px;
       min-width: 320px;
-      content: "";
-      display: table;
-      clear: both;
-      margin: 0;
+      display: block;
 }
-div {
-  display: block;
-}
-header.clearfix {
-  width: auto;
+div .main {
+  /*display: block;*/
+  /*width: auto;*/
   margin-left: auto;
   margin-right: auto;
 }
-header > span, header > h1 {
+.container > header {
+  /*width: auto;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+div .container > header > span {
   text-align: center;
+}
+li .cbp_tmtime {
+  width: 100%;
+  position: relative;
+  display: block;
+  padding-bottom: 20px;
+}
+.cbp_tmtimeline li .cbp_tmlabel {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 30px;
+  margin-left: 0;
+  padding: 15px;
 }
 }
