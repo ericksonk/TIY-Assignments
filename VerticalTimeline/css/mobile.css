@@ -16,7 +16,7 @@ div .main {
   margin-left: auto;
   margin-right: auto;
 }
-div .container > header > span {
+.clearfix {
   text-align: center;
 }
 li .cbp_tmtime {
@@ -24,6 +24,8 @@ li .cbp_tmtime {
   position: relative;
   display: block;
   padding-bottom: 20px;
+  background: #fff;
+  font-size: 16pt;
 }
 .cbp_tmtimeline li .cbp_tmlabel {
   margin-top: 0;
