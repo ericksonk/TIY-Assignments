@@ -25,6 +25,11 @@ li .cbp_tmtime {
   display: block;
   padding-bottom: 20px;
   background: #fff;
+}
+li .cbp_tmtime span:first-child {
+  font-size: 12pt;
+}
+li .cbp_tmtime span:last-child {
   font-size: 16pt;
 }
 .cbp_tmtimeline li .cbp_tmlabel {
