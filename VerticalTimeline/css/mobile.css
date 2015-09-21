@@ -1,6 +1,6 @@
 @media only screen
   and (min-device-width: 320px)
-  and (max-device-width: 736px)
+  and (max-device-width: 755px)
   and (-webkit-min-device-pixel-ratio: 3) {
 
 body {
@@ -16,9 +16,10 @@ div {
 }
 header.clearfix {
   width: auto;
-  margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
 }
-
+header > span, header > h1 {
+  text-align: center;
+}
 }
