@@ -1,26 +1,47 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
   display: block;
 }
-header {
-  width: auto;
-  margin: 10px 200px 10px 200px;
-  padding: 50px 100px 50px 100px;
-  text-align: center;
+header { /* h3, span & nav */
+  color: #47A3DA;
 }
-.main {
+header > span:first-child { /* "Blueprint" */
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+nav{ /* nav buttons */
+  color: #6CBFEE;
+}
+.main { /* entire timeline */
   width: 75%;
   margin: 0 45px 0 45px;
   padding: 0 30px 50px 30px;
 }
-div.cbp_tmlabel {
+div.cbp_tmlabel { /* whole timeline minus margins */
   color: #fff;
   background-color: #6CBFEE;
-  padding: 20px;
+  /*padding: 20px;
   margin: 0 0 15px 100px;
+}*/
+li:nth-child(even) .cbp_tmlabel { /* changes color of boxes */
+  background-color: #3594CB;
+}
+h2 {
+  border-bottom: solid 1px white;
+}
+.cbp_tmtimeline li { /* gets rid of bullet points */
+  list-style-type: none;
+}
+time > span:first-child { /* date */
+  display: block;
+  color: gray;
+}
+time > span:last-child { /* time */
+  display: block;
+  color: #6CBFEE;
 }
 
-.cbp_tmlabel {
+/*.cbp_tmlabel {
 	position: relative;
 	background: #6CBFEE;
 }
@@ -37,7 +58,7 @@ div.cbp_tmlabel {
 	border-right-color: #6CBFEE;
 	border-width: 10px;
 	margin-top: -10px;
-}
+}*/
 /*
 <time> date & time on lefthand side of boxes
 <header class="clearfix"> header elements

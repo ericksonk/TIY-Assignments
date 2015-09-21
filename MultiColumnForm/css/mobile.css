@@ -1,10 +1,26 @@
-input, select, textarea {
-  display: block;
-  -webkit-column-count: 1 400px;
-     -moz-column-count: 1 400px;
-          column-count: 1 400px;
+@media only screen and (min-device-width: 320px){
+
+.cbp-mc-column {
+  max-width: 480px;
+  min-width: 320px;
+  content: "";
+  display: table;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.cbp-mc-form {
-  align: center;
+header.clearfix { /* "Responsive Multi-Column Form" */
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  text-align: center;
 }
+}
+
+/*div.cbp-mc-column { /* columns */
+  /*width: 90%;
+  /*float: left;*/
+  /*margin-left: auto;
+  margin-right: auto;
+}*/

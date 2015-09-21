@@ -1,0 +1,115 @@
+/*@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {*/
+
+header { /* h3, span & nav */
+  color: #47A3DA;
+  margin-top: auto;
+  width: auto;
+  padding: 46px 30px 30px 30px;
+  margin: 0 140px 0 140px;
+}
+header > span:first-child { /* "Blueprint" */
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+}
+nav{ /* nav buttons */
+  color: #6CBFEE;
+  text-align: right;
+}
+.main { /* entire timeline */
+  width: 75%;
+  margin: 0 140px 0 140px;
+  padding: 0 30px 50px 30px;
+}
+.cbp_tmtimeline {
+  position: relative;
+  display: block;
+  vertical-align: top;
+}
+.cbp_tmtimeline > li .cbp_tmicon {
+  /*width: 40px;
+  height: 40px;*/
+  font-family: 'ecoico';
+}
+div.cbp_tmlabel { /* whole timeline minus margins */
+  color: #fff;
+  background-color: #6CBFEE;
+  border-radius: 5px;
+  width: auto;
+  height: 300px;
+  padding: 40px 40px 0 40px;
+  margin: 0 0 30px 200px;
+}
+li:nth-child(even) .cbp_tmlabel { /* changes color of boxes */
+  background-color: #3594CB;
+}
+h2 {
+  border-bottom: solid 1px white;
+}
+.cbp_tmtimeline li { /* gets rid of bullet points */
+  list-style-type: none;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+li:nth-child(even) .cbp_tmlabel:before{
+  border-right-color: #3594CB;
+}
+li:nth-child(even) .cbp_tmlabel:after {
+  border-right-color: #3594CB;
+}
+time > span:first-child { /* date */
+  display: block;
+  /*width: 160px;
+  padding: 0;
+  margin: 0;*/
+  color: gray;
+}
+time > span:last-child { /* time */
+  display: block;
+  width: 160px;
+  padding: 0;
+  margin: 0;
+  color: #6CBFEE;
+  font-size: 30pt;
+}
+.cbp_tmtime { /* aligns boxes w/ time */
+  display: inline-block;
+  float: left;
+}
+}
+
+/*.cbp_tmlabel:after, .cbp_tmlabel:before {
+	right: 100%;
+	top: 9%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+  left: 21.5%;
+}
+.cbp_tmlabel:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #6CBFEE;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.cbp_tmlabel:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color: #6CBFEE;
+	border-width: 10px;
+	margin-top: -10px;
+}*/
+
+  /*span, h1 {
+    width: auto;
+    margin: auto;
+    padding: auto;
+    margin: 10px 200px 10px 200px;
+    padding: 50px 100px 50px 100px;*/

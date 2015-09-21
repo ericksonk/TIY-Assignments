@@ -1,0 +1,42 @@
+@media only screen and (min-device-width: 320px) {
+
+body {
+      max-width: 755px;
+      min-width: 320px;
+      display: block;
+}
+div .main {
+  /*display: block;*/
+  /*width: auto;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+.container > header {
+  /*width: auto;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+.clearfix {
+  text-align: center;
+}
+li .cbp_tmtime {
+  width: 100%;
+  position: relative;
+  display: block;
+  padding-bottom: 20px;
+  background: #fff;
+}
+li .cbp_tmtime span:first-child {
+  font-size: 12pt;
+}
+li .cbp_tmtime span:last-child {
+  font-size: 16pt;
+}
+.cbp_tmtimeline li .cbp_tmlabel {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 30px;
+  margin-left: 0;
+  padding: 15px;
+}
+}
