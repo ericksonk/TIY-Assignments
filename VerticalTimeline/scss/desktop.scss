@@ -10,16 +10,19 @@ header { /* h3, span & nav */
   width: auto;
   padding: 46px 30px 30px 30px;
   margin: 0 140px 0 140px;
+
+  span:first-child { /* "Blueprint" */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  nav { /* nav buttons */
+    color: #6CBFEE;
+    text-align: right;
+  }
+
 }
-header > span:first-child { /* "Blueprint" */
-  text-transform: uppercase;
-  letter-spacing: 5px;
-}
-}
-nav{ /* nav buttons */
-  color: #6CBFEE;
-  text-align: right;
-}
+
 .main { /* entire timeline */
   width: 75%;
   margin: 0 140px 0 140px;
