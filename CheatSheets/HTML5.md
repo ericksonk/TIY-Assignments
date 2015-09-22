@@ -78,6 +78,53 @@ indicates someting is no longer accurate or relevant but should not be deleted (
 ## `<ins>` & `<del>`
 used to show content that has been inserted into a document while the <del> element can show text that has been deleted from it. The content from an <ins> element is usually underlined, while the content of a <del> eleent can show text that has been deleted from it.
 
+## Lists
+HTML Provides us with 3 diff types of lists:
+
+### Ordered Lists:
+each item in the list is numbered.
+##### `<ol>`
+ordered list is created with the `<ol>` element
+##### `<li>`
+* each item in the list is places between an opening and closing `<li>` tag (list item).
+* browsers indent lists by default.
+
+### Unordered Lists:
+begin with a bullet point rather than a character that indicates order.
+##### `<ul>`
+unordered list created with the `<ul>` element.
+##### `<li>`
+* each item in the list is placed between an opening and closing `<li>` tag.
+
+### Definition Lists:
+made up of a set of terms along with the definitions for each of those terms.
+```
+<dl>
+  <dt>Sashimi</dt>
+  <dd>Sliced raw fish that is served w/ condiments such as shredded daikon raddish or ginger root, wasabi and soy sauce</dd>
+```
+##### `<dl>`
+* Definition list is created with the `<dl>` element and usually consists of a series of terms and their definitions.
+* inside the `<dl>` element you will usually see pairs of `<dt>` and `<dd>` elements
+##### `<dt>`
+Used to contain the term being defined (the definition term).
+##### `<dd>`
+Used to contain the definition.
+
+## Interactive Form Elements
+HTML borrows the concept of a form to refer to different elements that allow you to collect information from visitors to your site.
+##### `<form>`
+Form controls live inisde a <form> element. This element should always carry the `action` attribute and will usually have a `menthod` and `id` attribute too.
+* `action` : Every <form> element requires an action attribute. Its value is the URL for the page on the server that will received the info in the form when it is submitted.
+* `method`: forms can be sent using one of 2 methods:
+  * `get` the values from the form are added to the end of the URL specified in the action attribute. The get method is ideal for short forms (such as search boxes) and when you are just retrieving data from the web server (not sending info that should be added or deleted from a database)
+  * `post` the values are sent in what are known as HTTP headers. You should use post method if your form:
+      * allows  users to upload a file
+      * is very long
+      * contains sensitive data (ex. passwords)
+      * adds info to, or deletes information from a data base.
+* `id` value is used to id the for distinctly from other elements on the page.
+
 ###### Footnotes
 
 [1](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
