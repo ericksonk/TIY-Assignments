@@ -2,76 +2,51 @@ body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
   display: block;
 }
+
 header { /* h3, span & nav */
   color: #47A3DA;
+
+  span:first-child { /* "Blueprint" */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  nav { /* nav buttons */
+    color: #6CBFEE;
+  }
 }
-header > span:first-child { /* "Blueprint" */
-  text-transform: uppercase;
-  letter-spacing: 5px;
-}
-nav{ /* nav buttons */
-  color: #6CBFEE;
-}
+
+
 .main { /* entire timeline */
   width: 75%;
   margin: 0 45px 0 45px;
   padding: 0 30px 50px 30px;
 }
+
 div.cbp_tmlabel { /* whole timeline minus margins */
   color: #fff;
   background-color: #6CBFEE;
-  /*padding: 20px;
-  margin: 0 0 15px 100px;
-}*/
-li:nth-child(even) .cbp_tmlabel { /* changes color of boxes */
-  background-color: #3594CB;
+
+  li:nth-child(even) .cbp_tmlabel { /* changes color of boxes */
+    background-color: #3594CB;
+  }
+
+  h2 {
+    border-bottom: solid 1px white;
+  }
 }
-h2 {
-  border-bottom: solid 1px white;
-}
+
 .cbp_tmtimeline li { /* gets rid of bullet points */
   list-style-type: none;
 }
-time > span:first-child { /* date */
+
+time {
+  span:first-child { /* date */
   display: block;
   color: gray;
-}
-time > span:last-child { /* time */
+  }
+  span:last-child { /* time */
   display: block;
   color: #6CBFEE;
+  }
 }
-
-/*.cbp_tmlabel {
-	position: relative;
-	background: #6CBFEE;
-}
-.cbp_tmlabel:after {
-	right: 100%;
-	top: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(108, 191, 238, 0);
-	border-right-color: #6CBFEE;
-	border-width: 10px;
-	margin-top: -10px;
-}*/
-/*
-<time> date & time on lefthand side of boxes
-<header class="clearfix"> header elements
-ul.cbp_tmtimeline entire timeline element
-div.cbp_tmicon - icons next to time
-div.cbp_tmlabel - content block
-h2 - heading for each section
-p - paragraphs within h2
-*/
-
-/*
-color: #6CBFEE; (light blue)
-        #3594CB; (dark blue)
-font: Arial; ???
-      20pt. ???
-*/
