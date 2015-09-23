@@ -8,21 +8,22 @@ body {
   padding: 46px 30px 30px 30px;
   width: 90%;
 }
-header > span { /* "Blueprint" */
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+header {
+  span { /* "Blueprint" */
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-top: 5px;
+  }
+  header > nav {
+    float: right;
+  }
 }
-header > h1 {
-  font-size: 36px;
-  margin-top: 5px;
-}
-header > nav {
-  float: right;
-}
-/*#cbp-vm {
-  border: solid #47A3DA;
-}*/
+
 .cbp-vm-options { /* grid & list buttons */
   /*float: right;*/
   text-align: right;
@@ -60,10 +61,10 @@ header > nav {
 }*/
 
 
-[class*='column-'] { /* selects all columns and makes them next to eachother */
+// [class*='column-'] { /* selects all columns and makes them next to eachother */
   /*float: left;*/
-  width: 33%;
-}
+
+// }
 
 /* Clear content- parent element (div.grid) will collapse to zero height since
 it only has floated children. Fixes by clearing it */
@@ -88,17 +89,20 @@ it only has floated children. Fixes by clearing it */
 /* 2nd step- apply fixed padding to right side of all columns except last one */
 [class*='column-'] {
   padding-right: 20px;
-}
-[class*='column-']:last-of-type {
-  padding-right: 0;
+  width: 33%;
+
+  [class*='column-']:last-of-type {
+    padding-right: 0;
+  }
 }
 
 /* OUTSIDE GUTTERS */
 /* 1st step- add padding to grid parent */
 .grid-pad {
   padding: 20px 0 20px 20px 20px;
-}
-/* 2nd step- restore right pading to last column */
-.grid-pad > [class*='column-']:last-of-type {
-  padding-right: 20px;
+
+  /* 2nd step- restore right pading to last column */
+  [class*='column-']:last-of-type {
+    padding-right: 20px;
+  }
 }
