@@ -125,6 +125,20 @@ Form controls live inisde a <form> element. This element should always carry the
       * adds info to, or deletes information from a data base.
 * `id` value is used to id the for distinctly from other elements on the page.
 
+##### `<input>`
+used to create several different form controls. The value of the type attribute determines what kind of input they will be creating.
+* `type="text"` when the type attribute has a value of tet, it creates a single line text input
+* `name` when users enter info into a form, the server needs to know which form control each piece of data was entered into. Therefore, each control requires a name attribute. The value of this attribute identifies the form control and is sent along with the info they enter to the server.
+* `maxlength` limits the number of characters a user may enter into the text field. Its value is the number of characters they may enter.
+* `size` side attribute should not be used on new forms. It was used in older forms to indicate the width of the text input (measured by the number of charaters that would be seen)
+
+Other types of input: "password", <textarea>, "radio", "checkbox", <select>, "file", "submit", "image", "hidden"
+
+##### `<label>`
+Each form control should have its own label element as this makes the form accessible to vision-impaired users. The <label> element can be used in one of 2 ways:
+  1. Wrap around both the text and description and the form input
+  1. be kept separate from the form control and use the for attribute to indicate which form control it is a label for
+
 ###### Footnotes
 
 [1](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
