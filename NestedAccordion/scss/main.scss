@@ -114,22 +114,29 @@ ul.accordion {
     h2 {
       font-size: 16pt;
       border-bottom: 1px solid black;
+      color: #47A3DA;
     }
 }
 
-ul.subAccordion {
-  li {
-    list-style: none;
-  }
-    h3 {
-      font-size: 14pt;
+.wholeAccordion {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  
+    ul.subAccordion {
+      li {
+        list-style: none;
+      }
+        h3 {
+          font-size: 14pt;
+          color: #47A3DA;
+        }
     }
 }
 
 p {
   font-size: 12pt;
 }
-
 
 
 
