@@ -138,6 +138,61 @@ Other types of input: "password", <textarea>, "radio", "checkbox", <select>, "fi
 Each form control should have its own label element as this makes the form accessible to vision-impaired users. The <label> element can be used in one of 2 ways:
   1. Wrap around both the text and description and the form input
   1. be kept separate from the form control and use the for attribute to indicate which form control it is a label for
+* `for` attribute: states which form control the label belongs to.
+```
+Best places to place labels on form controls:
+
+Above or to the left:
+1. text inputs
+2. text areas
+3. select boxes
+4. file uploads
+
+To the right:
+1. individual checkboxes
+2. individual radio buttons
+```
+
+##### `<fieldset>`
+You can group related form controls together inside the <fieldset> element. This is particularly helpful for longer forms. Most browsers will show the `feildset` with a line around the edge to show how they are related. The appearance of these lines can be adjusted using CSS.
+
+##### `<ledgend>`
+Can come directly after the opening `<fieldset>` tag and contains a caption which helps identify the purpose of that group of form controls.
+
+## Table Elements
+A table represents information in a grid format. Examples of tables include financial reports, tv schedules, and sports results. **grids** allow us to understand complex data by referencing info on two axes. Each block in the grid is reffered to as a **table cell**. In html a table is written out row by row.
+
+##### `<table>`
+used to create a table. the contents of the table are written out row by row.
+
+##### `<caption>`
+represents the title of a table. Though it always the first descendant of a <table>, its styling, using CSS, may palce it elsewhere, relative to the table.
+
+##### `<col>`
+defines a column within a table and is use for defining common semantics on all common cells. It is generally found within a <colgroup> element. this element allows styling columns using CSS, but only a few attributes will have an effect on the column.
+
+##### `<colgroup>`
+defines a group of columns within a table.
+
+##### `<tbody>`
+defines one or more <tr> element data-rows to be the body of its parent <table> element. In conjunction with a preceding <thead> and/or <tfoot> element, <tbody> provides additional semantic info for devices sucha printers and displays.
+
+##### `<thead>`
+the headings of the table should sit inside the <thead> element. It defines a set of rows defining the head of the columns table.
+
+##### `<tfoot>`
+defines a set of rows summarizing the columns for the table.
+
+##### `<tr>`
+`tr` stands for **table row**. You indicate the start of each row using the opening <tr> tag. It is followed by one or more `<td>` elements (one for each cell in that row). At the end of the row you use a closing `</tr>` tag.
+
+##### `<td>`
+'td' stands for **table data**.
+
+##### `<th>`
+'th' stands for **table heading**. Used just like `<td>` element but its purpose is to represent the heading for either a column or a row. Even if a cell has no content, you should still use a <td> or <th> element to represent the presence of an empty cell otherwise the table will not render correctly.
+* using <th> elements for headings helps people who use screen readers, improves the ability for search engines to index your pages and also give you greater control over the appearance of the tables when you start to use CSS.
+* You can use the `scope` attribute to indicate whether it is a heading for a column or a row. It can take the values row and indicate a heading for a row or col to indicate a heading for a column.
 
 ###### Footnotes
 
