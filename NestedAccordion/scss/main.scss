@@ -134,7 +134,7 @@ h2 {
     padding: 10px;
   }
 
-  &::before:hover {
+  &:hover::before {
     content: "\2193";
   }
 }
