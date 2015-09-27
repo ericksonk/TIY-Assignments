@@ -18,8 +18,13 @@
 
 $('#inputForm').submit(function (e) {
   var $inputs = $('#inputForm :input');
-
-  console.log($inputs);
+  var values = $(this).serialize();
+  // var values = {};
+  // $inputs.each(function () {
+  //   values[this.name] = $(this).val();
+  // });
+  e.preventDefault();
+  console.log(values);
 });
 
 
