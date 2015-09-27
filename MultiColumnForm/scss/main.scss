@@ -124,36 +124,56 @@ h1 {
 
   .column-1, .column-2, .column-3 {
     position: relative;
-    width: 33%;
+    width: 28%;
     float: left;
     display: block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 20px;
     margin-left: auto;
     margin-right: auto;
 
       label {
-        display: block;
+        // display: block;
         float: left;
         color: #FFFFFF;
         text-transform: uppercase;
         clear: both;
       }
         input {
-          display: block;
+          // display: block;
           width: 100%;
-          padding: 5px 10px;
+          height: 25px;
           background-color: #47A3DA;
+          border: solid 2px;
+          border-color: #fff;
+          padding-bottom: 30px;
         }
 
         select {
-          display: block;
+          // display: block;
           width: 100%;
-          min-height: 100px;
+          background-color: #47A3DA;
+          border: solid 2px;
+          border-color: #fff;
+          padding-bottom: 30px;
+
         }
 
         textarea {
-          display: block;
+          // display: block;
           width: 100%;
+          min-height: 100px;
+          background-color: #47A3DA;
+          border: solid 2px;
+          border-color: #fff;
+          padding-bottom: 30px;
+
         }
+}
+
+button {
+  clear: both;
 }
 
 
