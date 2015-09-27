@@ -8,6 +8,8 @@ $('h2').on('click', function(){
     }
 });
 
+$('h3 ~ p').hide();
+
 // $('li').each(function() {
 //   $(this).show();
 // });
