@@ -12,14 +12,23 @@ var $view = $('#cbp-vm'); // selects entire view mode
     $grid = $('.cbp-vm-icon.cbp-vm-grid');
 
 $list.on('click', function() {
-  if ($grid.hasClass('.cbp-vm-selected')) {
+    $grid.removeClass('.cbp-vm-selected');
     $list.addClass('.cbp-vm-selected');
-  }
+    $view.addClass('.cbp-vm-switcher.cbp-vm-view-list');
+  });
 
-  if ($(this).hasClass('.cbp-vm-grid.cbp-vm-selected')) {
-    $('#cbp-vm').removeClass()('.cbp-vm-switcher .cbp-vm-view-grid');
-  }
-  if ($(this).hasClass('.cbp-vm-list .cbp-vm-selected')) {
-    $('#cbp-vm').removeClass('.cbp-vm-switcher .cbp-vm-view-grid').addClass('.cbp-vm-switcher .cbp-vm-view-list');
-  }
+$grid.on('click', function() {
+  $list.removeClass('.cbp-vm-selected');
+  $grid.addClass('.cbp-vm-selected');
+  $view.addClass('.cbp-vm-switcher.cbp-vm-view-grid');
 });
+
+//   if ($grid.)
+//
+//   if ($(this).hasClass('.cbp-vm-grid.cbp-vm-selected')) {
+//     $('#cbp-vm').removeClass()('.cbp-vm-switcher .cbp-vm-view-grid');
+//   }
+//   if ($(this).hasClass('.cbp-vm-list .cbp-vm-selected')) {
+//     $('#cbp-vm').removeClass('.cbp-vm-switcher .cbp-vm-view-grid').addClass('.cbp-vm-switcher .cbp-vm-view-list');
+//   }
+// });
