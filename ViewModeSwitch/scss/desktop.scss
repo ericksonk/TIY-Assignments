@@ -22,25 +22,31 @@
   margin-right: auto;
 }
 /* ----- GRID VIEW ------ */
-.cbp-vm-view-grid li {
-  padding: 25px;
-  margin-top: 20px;
-  float: left;
-  width: 33%;
-  list-style-type: none;
-  text-align: center;
+.cbp-vm-view-grid {
+
+  li {
+    padding: 25px;
+    margin-top: 20px;
+    float: left;
+    width: 33%;
+    list-style-type: none;
+    text-align: center;
+  }
+
+    .cbp-vm-add {
+      vertical-align: middle;
+      margin-top: 20px;
+      color: #fff;
+      background: #47A3DA;
+      border-radius: 2px;
+      padding: 10px 10px;
+    }
+
+      .cbp-vm-details {
+        min-height: 70px;
+      }
 }
-.cbp-vm-view-grid .cbp-vm-add {
-  vertical-align: middle;
-  margin-top: 20px;
-  color: #fff;
-  background: #47A3DA;
-  border-radius: 2px;
-  padding: 10px 10px;
-}
-.cbp-vm-view-grid .cbp-vm-details {
-  min-height: 70px;
-}
+
 .main {
   padding: 0 30px 50px 30px;
   border: solid #47A3DA;
