@@ -128,12 +128,15 @@ h1 {
   }
 }
 
-h2::before {
-  content: "\2192";
-  padding: 10px;
-    :hover {
-      content: "\2193";
-    }
+h2 {
+  &::before {
+    content: "\2192";
+    padding: 10px;
+  }
+
+  &:hover::before {
+    content: "\2193";
+  }
 }
 
 ul.subAccordion {
