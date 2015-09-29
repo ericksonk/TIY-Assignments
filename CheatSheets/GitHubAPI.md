@@ -136,7 +136,7 @@ X-RateLimit-Remaining: 4999
   }
 }
 ```
-### Rate Limiting
+## Rate Limiting
 * For requests w/ Basic Authentication or OAuth, you can make up to 5,000 requests per hour.
 * For unauthenticated requests, the rate limit allows you to make up to 60 requests per hour
   - unauthenticated requests are associated w/ your IP address and not the user making requests.
@@ -152,3 +152,7 @@ X-RateLimit-Remaining: 56
 X-RateLimit-Reset: 1372700873
 ```
 * Once you go over the rate limit you will recieve an error message
+
+## `Promise`
+The promise object is used for defferred and asynchronous computations. A promise represents an operation that hasnt completed yet, but is expected in the future.
+* Syntax: `Promise(executor);`
