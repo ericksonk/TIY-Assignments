@@ -156,3 +156,45 @@ X-RateLimit-Reset: 1372700873
 ## `Promise`
 The promise object is used for defferred and asynchronous computations. A promise represents an operation that hasnt completed yet, but is expected in the future.
 * Syntax: `Promise(executor);`
+
+
+When fetching public events for a user...
+* What fields are included in each result?
+- type, public, payload, repo (id, name, url), actor (id, login, gravatar_id, avatar_url, url), org (id, login, gravatar_id, url, avatar_url), created_at and id.
+
+* What are the data types for each field?
+- all data types are represented as Strings except for the "id" field which is represented as a Number and the "public" field which is represented as a Boolean.
+
+* What are some of the different values for the type field?
+- links, file paths, strings, empty strings, string of numbers, Numbers
+```
+[
+  {
+    "type": "Event",
+    "public": true,
+    "payload": {
+    },
+    "repo": {
+      "id": 3,
+      "name": "octocat/Hello-World",
+      "url": "https://api.github.com/repos/octocat/Hello-World"
+    },
+    "actor": {
+      "id": 1,
+      "login": "octocat",
+      "gravatar_id": "",
+      "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+      "url": "https://api.github.com/users/octocat"
+    },
+    "org": {
+      "id": 1,
+      "login": "github",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/github",
+      "avatar_url": "https://github.com/images/error/octocat_happy.gif"
+    },
+    "created_at": "2011-09-06T17:26:27Z",
+    "id": "12345"
+  }
+]
+```
