@@ -158,15 +158,16 @@ The promise object is used for defferred and asynchronous computations. A promis
 * Syntax: `Promise(executor);`
 
 
-When fetching public events for a user...
+
+#### When fetching public events for a user...
 * What fields are included in each result?
-- type, public, payload, repo (id, name, url), actor (id, login, gravatar_id, avatar_url, url), org (id, login, gravatar_id, url, avatar_url), created_at and id.
+  - type, public, payload, repo (id, name, url), actor (id, login, gravatar_id, avatar_url, url), org (id, login, gravatar_id, url, avatar_url), created_at and id.
 
 * What are the data types for each field?
-- all data types are represented as Strings except for the "id" field which is represented as a Number and the "public" field which is represented as a Boolean.
+  - all data types are represented as Strings except for the "id" field which is represented as a Number and the "public" field which is represented as a Boolean.
 
 * What are some of the different values for the type field?
-- links, file paths, strings, empty strings, string of numbers, Numbers
+  - links, file paths, strings, empty strings, string of numbers, Numbers
 ```
 [
   {
