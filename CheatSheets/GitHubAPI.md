@@ -160,6 +160,14 @@ The promise object is used for defferred and asynchronous computations. A promis
 
 
 #### When fetching public events for a user...
+* How many results are returned by default?
+  - The fixed page size is 30 items. Fetching up to ten pages is supported, for a total of 300 events.
+
+* What limitations exist on fetching ​_more_​ results?
+  - Only events created within the past 90 days will be included in timelines. Events older than 90 days will not be included (even if the total number of events in the timeline is less than 300).
+
+* What is the basic structure of the results?
+
 * What fields are included in each result?
   - type, public, payload, repo (id, name, url), actor (id, login, gravatar_id, avatar_url, url), org (id, login, gravatar_id, url, avatar_url), created_at and id.
 
