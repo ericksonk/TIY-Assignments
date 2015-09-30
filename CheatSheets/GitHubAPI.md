@@ -157,7 +157,27 @@ X-RateLimit-Reset: 1372700873
 The promise object is used for defferred and asynchronous computations. A promise represents an operation that hasnt completed yet, but is expected in the future.
 * Syntax: `Promise(executor);`
 
+#### What are the endpoint for fetching...
 
+API Endpoint: any url that the api understands/any URL that will return info back.
+
+* the profile data for a user?
+  - https://api.github.com/users/USERNAME
+
+* the organizations a user belongs to?
+  - https://api.github.com/users/USERNAME/orgs
+
+* the repositories a user has created?
+  - https://api.github.com/users/USERNAME/repos
+  
+* a filtered list of repositories?
+  - You can use parameters such as `visibility`, `affilitiation`, `type`, and `direction` to filter your results.
+
+* a sorted list of repositories?
+  - Use the `sort` parameter to sort the results into `created`, `updated` `pushed`, and `full_name`.
+
+* public events for a user?
+  - https://api.github.com/users/USERNAME/events/public
 
 #### When fetching public events for a user...
 * How many results are returned by default?
