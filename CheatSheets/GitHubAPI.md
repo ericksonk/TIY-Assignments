@@ -169,7 +169,7 @@ API Endpoint: any url that the api understands/any URL that will return info bac
 
 * the repositories a user has created?
   - https://api.github.com/users/USERNAME/repos
-  
+
 * a filtered list of repositories?
   - You can use parameters such as `visibility`, `affilitiation`, `type`, and `direction` to filter your results.
 
@@ -227,3 +227,16 @@ API Endpoint: any url that the api understands/any URL that will return info bac
   }
 ]
 ```
+
+#### How can I use the Github API to...
+* get all the comments for a particular issue?
+* add a comment to an issue?
+
+#### How can I use the jQuery API to...
+* get the HTML contents of an element?
+* create a new HTML element?
+* add an HTML element to the page?
+
+#### How can I use the Lodash API to...
+* replace placeholders with values from an object?
+* repeat code for every item of an array?
