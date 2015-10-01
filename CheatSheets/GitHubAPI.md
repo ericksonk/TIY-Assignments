@@ -230,7 +230,22 @@ API Endpoint: any url that the api understands/any URL that will return info bac
 
 #### How can I use the Github API to...
 * get all the comments for a particular issue?
+```
+GET /repos/:owner/:repo/issues/:number/comments
+```
+  - Issue comments are ordered by ascending ID.
+
 * add a comment to an issue?
+```
+POST /repos/:owner/:repo/issues/:number/comments
+```
+  - input: `"body": "String"`
+  - ex.
+  ```
+  {
+    "body": "Me too"
+  }
+  ```
 
 #### How can I use the jQuery API to...
 * get the HTML contents of an element?
