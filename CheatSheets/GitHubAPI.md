@@ -169,7 +169,7 @@ API Endpoint: any url that the api understands/any URL that will return info bac
 
 * the repositories a user has created?
   - https://api.github.com/users/USERNAME/repos
-  
+
 * a filtered list of repositories?
   - You can use parameters such as `visibility`, `affilitiation`, `type`, and `direction` to filter your results.
 
@@ -227,3 +227,41 @@ API Endpoint: any url that the api understands/any URL that will return info bac
   }
 ]
 ```
+
+#### How can I use the Github API to...
+* get all the comments for a particular issue?
+```
+GET /repos/:owner/:repo/issues/:number/comments
+```
+  - Issue comments are ordered by ascending ID.
+
+* add a comment to an issue?
+```
+POST /repos/:owner/:repo/issues/:number/comments
+```
+  - input: `"body": "String"`
+  - ex.
+  ```
+  {
+    "body": "Me too"
+  }
+  ```
+
+#### How can I use the jQuery API to...
+* get the HTML contents of an element?
+```
+.html()
+```
+  - Get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element.
+  - This method does not accept any arguments
+  - Can be used to get the contents of any element.
+  - if the selector expression matches more than one element, only the first match will have its HTML content returned.
+* create a new HTML element?
+`.add(html)` ??? maybe?? or `append(content [, content])` ???
+* add an HTML element to the page?
+
+#### How can I use the Lodash API to...
+Lodash is a toolkit of JS functions that provides clean, performant methods for manipulating objects and collections. It is a "fork" of the Underscore(?) library and provides additional functionality as well as some serious performance inprovements.
+
+* replace placeholders with values from an object?
+* repeat code for every item of an array?
