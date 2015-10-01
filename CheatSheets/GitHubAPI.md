@@ -249,7 +249,15 @@ POST /repos/:owner/:repo/issues/:number/comments
 
 #### How can I use the jQuery API to...
 * get the HTML contents of an element?
+```
+.html()
+```
+  - Get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element.
+  - This method does not accept any arguments
+  - Can be used to get the contents of any element.
+  - if the selector expression matches more than one element, only the first match will have its HTML content returned.
 * create a new HTML element?
+`.add(html)` ??? maybe?? or `append(content [, content])` ???
 * add an HTML element to the page?
 
 #### How can I use the Lodash API to...
