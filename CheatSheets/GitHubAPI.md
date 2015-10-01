@@ -261,5 +261,7 @@ POST /repos/:owner/:repo/issues/:number/comments
 * add an HTML element to the page?
 
 #### How can I use the Lodash API to...
+Lodash is a toolkit of JS functions that provides clean, performant methods for manipulating objects and collections. It is a "fork" of the Underscore(?) library and provides additional functionality as well as some serious performance inprovements.
+
 * replace placeholders with values from an object?
 * repeat code for every item of an array?
