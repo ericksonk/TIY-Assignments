@@ -1,0 +1,13 @@
+{
+  "name": "horizontaldropmenu",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "browser-sync start --server --directory --startPath='index.html'",
+    "sass":"node-sass scss/main.scss css/main.css"
+  },
+  "author": "Kristine Erickson",
+  "license": "MIT"
+}
