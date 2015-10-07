@@ -16,5 +16,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "resolutions": {
+    "jquery": "1.*"
+  },
+  "dependencies": {
+    "lodash": "~3.10.1"
+  }
 }
