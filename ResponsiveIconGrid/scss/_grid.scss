@@ -1,0 +1,29 @@
+body {
+  width: auto;
+
+  .container {
+    margin: 0 10%;
+
+    .grid {
+      width: auto;
+
+      &:after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      [class*="column"] { /* selects all columns */
+          float: left; /* makes columns next to eachother */
+          width: 30%; /* same width for all 12 boxes */
+          padding-right: 20px; /* applies fixed padding to right of all columns.. */
+          list-style-type: none;
+          border: gray solid 1px;
+
+            &:last-of-type { /* ...except last on */
+              // padding-right: 0;
+            }
+        }
+    }
+  }
+}
