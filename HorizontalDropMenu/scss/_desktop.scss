@@ -9,14 +9,25 @@ header {
 }
 
 nav.tabs {
-    border-bottom: 2px solid #47A3DA;
     box-sizing: border-box;
-    color: gray;
+    margin-left: 10px;
+    border: 1px;
 
     a[href] {
       display: inline-block;
       margin: 0.5em;
       margin-right: 0.5em;
       padding: 1ex 2em;
+      text-decoration: none;
+      color: gray;
+      font-weight: bolder;
     }
   }
+
+section.contentPanels {
+  border-top: 2px solid #47A3DA;
+}
+
+[class*='panel'] {
+  display: none;
+}
