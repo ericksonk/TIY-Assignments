@@ -21,6 +21,8 @@ nav.tabs {
       text-decoration: none;
       color: gray;
       font-weight: bolder;
+      position: relative;
+      bottom: -7px;
 
       &.active {
         background: #47A3DA;
@@ -31,10 +33,24 @@ nav.tabs {
 
 section.contentPanels {
   border-top: 2px solid #47A3DA;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 [class*='panel'] {
   // display: none;
+  ul {
+    list-style-type: none;
+    display: inline-block;
+
+    li {
+      &:first-child {
+        font-size: 16pt;
+        color: #AFDEFA;
+      }
+    }
+  }
 
   &.active {
     display: inherit;
