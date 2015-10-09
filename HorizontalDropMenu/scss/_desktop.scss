@@ -7,3 +7,16 @@ header {
   padding: 10px 20px;
   line-height: 1;
 }
+
+nav.tabs {
+    border-bottom: 2px solid #47A3DA;
+    box-sizing: border-box;
+    color: gray;
+
+    a[href] {
+      display: inline-block;
+      margin: 0.5em;
+      margin-right: 0.5em;
+      padding: 1ex 2em;
+    }
+  }
