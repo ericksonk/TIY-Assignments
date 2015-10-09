@@ -21,8 +21,8 @@ nav.tabs {
       text-decoration: none;
       color: gray;
       font-weight: bolder;
-      position: relative;
-      bottom: -7px;
+      position: relative; // connects tab to panels
+      bottom: -7px; // connects tab to panels
 
       &.active {
         background: #47A3DA;
@@ -33,9 +33,9 @@ nav.tabs {
 
 section.contentPanels {
   border-top: 2px solid #47A3DA;
-  position: absolute;
-  left: 0;
-  right: 0;
+  position: absolute; // extends border to full width
+  left: 0; // property of absolte
+  right: 0; // property of absolute
 }
 
 [class*='panel'] {
