@@ -21,6 +21,11 @@ nav.tabs {
       text-decoration: none;
       color: gray;
       font-weight: bolder;
+
+      &.active {
+        background: #47A3DA;
+        font-color: #FFF;
+      }
     }
   }
 
@@ -29,5 +34,11 @@ section.contentPanels {
 }
 
 [class*='panel'] {
-  display: none;
+  // display: none;
+
+  &.active {
+    display: inherit;
+    background: #47A3DA;
+    color: #FFF;
+  }
 }
