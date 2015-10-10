@@ -7,9 +7,16 @@ section.grid{
       }
       span.category {
         color: #FFF;
+        visibility: visible;
       }
       h3 {
         color: #FFF;
+      }
+      hr.line-1 {
+        visibility: hidden;
+      }
+      hr.line-2 {
+        visibility: visible;
       }
     }
   }
