@@ -1,10 +1,12 @@
-// section.grid {
-//   a {
-//     i.icon{
-//
-//       &::before {
-//         font-size: 14em;
-//       }
-//   }
-//   }
-// }
+.grid {
+  ul.iconGrid {
+    list-style-type: none;
+
+    li [class*="box"] {
+
+    }
+    a[href] {
+      text-decoration: none;
+    }
+  }
+}

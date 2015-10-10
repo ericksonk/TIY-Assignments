@@ -15,7 +15,7 @@ body {
         clear: both;
       }
 
-      [class*="column"] { /* selects all columns */
+      [class*="box"] { /* selects all columns */
           float: left; /* makes columns next to eachother */
           width: 30%; /* same width for all 12 boxes */
           padding-right: 20px; /* applies fixed padding to right of all columns.. */
