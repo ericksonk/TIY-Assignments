@@ -20,7 +20,6 @@ body {
           width: 30%; /* same width for all 12 boxes */
           padding-right: 20px; /* applies fixed padding to right of all columns.. */
           list-style-type: none;
-          border: gray solid 1px;
 
             &:last-of-type { /* ...except last on */
               // padding-right: 0;
