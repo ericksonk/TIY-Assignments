@@ -2,9 +2,13 @@ section.grid{
   li {
     &:hover {
       background-color: #47A3DA;
-    }
-    span.fa {
-      &:hover {
+      span.fa {
+        color: #FFF;
+      }
+      span.category {
+        color: #FFF;
+      }
+      h3 {
         color: #FFF;
       }
     }
