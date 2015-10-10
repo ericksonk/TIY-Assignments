@@ -3,5 +3,10 @@ section.grid{
     &:hover {
       background-color: #47A3DA;
     }
+    span.fa {
+      &:hover {
+        color: #FFF;
+      }
+    }
   }
 }
