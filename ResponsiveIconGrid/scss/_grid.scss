@@ -1,12 +1,30 @@
 .grid {
   ul.iconGrid {
     list-style-type: none;
+    text-align: center;
 
-    li [class*="box"] {
-
-    }
     a[href] {
       text-decoration: none;
+    }
+
+    hr {
+      color: #47A3DA;
+    }
+
+    h3 {
+      color: #47A3DA;
+      font-size: 2em;
+    }
+
+    span {
+      &.fa {
+        color: #47A3DA;
+        font-size: 4em;
+      }
+      &.category {
+        color: #47A3DA;
+        text-transform: uppercase;
+      }
     }
   }
 }
