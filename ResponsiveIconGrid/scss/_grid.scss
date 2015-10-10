@@ -35,6 +35,10 @@
 
     hr {
       color: #47A3DA;
+
+      &.line-2 {
+        visibility: hidden;
+      }
     }
 
     h3 {
@@ -50,6 +54,7 @@
       &.category {
         color: #47A3DA;
         text-transform: uppercase;
+        visibility: hidden;
       }
     }
   }
