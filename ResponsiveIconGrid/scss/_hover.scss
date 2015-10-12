@@ -1,0 +1,23 @@
+section.grid{
+  li {
+    &:hover {
+      background-color: #47A3DA;
+      span.fa {
+        color: #FFF;
+      }
+      span.category {
+        color: #FFF;
+        visibility: visible;
+      }
+      h3 {
+        color: #FFF;
+      }
+      hr.line-1 {
+        visibility: hidden;
+      }
+      hr.line-2 {
+        visibility: visible;
+      }
+    }
+  }
+}

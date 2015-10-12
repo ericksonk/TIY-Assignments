@@ -1,0 +1,13 @@
+@media screen and (max-width: 1024px) {
+  .container{
+    header {
+      text-align: center;
+      padding-top: 10px;
+    }
+    .grid {
+      li[class*="box-"] {
+        width: 45%;
+      }
+    }
+  }
+}
