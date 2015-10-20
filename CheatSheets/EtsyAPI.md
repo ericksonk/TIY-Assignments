@@ -10,11 +10,9 @@
   - Yes-- The Etsy API requires an application key that is provided during app registration. The key identifies your application to the Etsy web service, and is used to track overall call usage. It's passed using the standard api_key parameter.
 
 * What can I do with an unauthenticated request?
-  - Retrieve the most recent active listings on Etsy. (???)
 
 * How can I authenticate my request? (what methods)
-  - For write access and for accessing private user data, an OAuth access token is required. Your application key is required to start the OAuth authentication process.
-  - New users register an application and receive a provisional API key upon signup. These keys have full access to resources in the Etsy API, however they are restricted to allow authentication only for the user who registered the application.
+  - Use authenticated keystring when you register app
 
 
 
@@ -31,3 +29,35 @@ What fields are returned for each Resource, specifically:
 an individual product?
 a group or collection of products?
 What additional fields can be requested for each?
+
+
+##### For the product list (category) page what data is needed from...
+* the Listing resource?
+
+* the ListingImage resource?
+
+* the Variations_* resources?
+
+* the Category resource?
+
+* the Shop resource?
+
+##### On the product detail page what data is needed from...
+* the Listing resource?
+
+* the ListingImage resource?
+
+* the Variations_* resources?
+
+* the Category resource?
+
+* the Shop resource?
+
+##### Identified for each:
+* API endpoint
+
+* required query params
+
+* additional params needed (fields, includes)
+
+* sample data returned
